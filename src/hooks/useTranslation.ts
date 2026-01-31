@@ -7,6 +7,7 @@ const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.projects': 'Progetti',
+    'nav.publications': 'Pubblicazioni',
     'nav.about': 'Chi Sono',
     'nav.skills': 'Competenze',
     'nav.volunteer': 'Volontariato',
@@ -90,6 +91,19 @@ const translations = {
     'volunteer.skills.organization': 'Organizzazione',
     'volunteer.skills.adaptability': 'Adattabilità',
     
+    // Publications Section
+    'publications.title': 'Pubblicazioni',
+    'publications.subtitle': 'Ricerca accademica in AI/ML, medical imaging e software engineering con focus su applicazioni pratiche e impatto reale.',
+    'publications.viewPdf': 'Visualizza PDF',
+    'publications.gan.title': 'GANs for Data Augmentation in Imbalanced Medical Image Classification',
+    'publications.gan.authors': 'Dorotea Monaco, Luigi Gonnella',
+    'publications.gan.venue': 'Politecnico di Torino - Machine Learning for Visual and Multimedia Project',
+    'publications.gan.abstract': 'Investigazione sistematica di Generative Adversarial Networks per l\'augmentation di dati sintetici nella classificazione di immagini mediche con grave squilibrio di classe. Il progetto valuta architetture DCGAN e cDCGAN attraverso multiple funzioni di loss (Hinge, Wasserstein, BCE, MSE) per affrontare il rilevamento di lesioni cutanee maligne nel dataset ISIC. Include ottimizzazione degli iperparametri, analisi dell\'adattamento del dominio con DANN, e valutazione approfondita su ResNet-50, ResNet-18 e AlexNet con paradigmi di training pre-trained e from-scratch.',
+    'publications.llm.title': 'Architectures for Code Development with LLMs',
+    'publications.llm.authors': 'Dorotea Monaco',
+    'publications.llm.venue': 'Politecnico di Torino - Large Language Models for Software Engineering Project',
+    'publications.llm.abstract': 'Studio comparativo di tre approcci architetturali per la generazione automatica di codice utilizzando Large Language Models: Naive Baseline (one-shot generation), Single-Agent Pipeline (ragionamento multi-step orchestrato con LangGraph), e Multi-Agent System (sistema collaborativo con ruoli specializzati: Planner, Coder, e Critic). Il progetto implementa workflow orchestration, code execution sandbox, quality metrics evaluation, e fornisce un\'analisi completa delle performance attraverso differenti task di programmazione.',
+    
     // Contact Section
     'contact.title': 'Mettiti in Contatto',
     'contact.subtitle': 'Sono sempre aperta a discutere nuove opportunità, progetti interessanti, o semplicemente fare una chiacchierata sulla tecnologia.',
@@ -129,6 +143,7 @@ const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.projects': 'Projects',
+    'nav.publications': 'Publications',
     'nav.about': 'About',
     'nav.skills': 'Skills',
     'nav.volunteer': 'Volunteer',
@@ -211,6 +226,19 @@ const translations = {
     'volunteer.skills.empathy': 'Empathy',
     'volunteer.skills.organization': 'Organization',
     'volunteer.skills.adaptability': 'Adaptability',
+    
+    // Publications Section
+    'publications.title': 'Publications',
+    'publications.subtitle': 'Academic research in AI/ML, medical imaging, and software engineering with focus on practical applications and real-world impact.',
+    'publications.viewPdf': 'View PDF',
+    'publications.gan.title': 'GANs for Data Augmentation in Imbalanced Medical Image Classification',
+    'publications.gan.authors': 'Dorotea Monaco, Luigi Gonnella',
+    'publications.gan.venue': 'Politecnico di Torino - Machine Learning for Visual and Multimedia Project',
+    'publications.gan.abstract': 'Systematic investigation of Generative Adversarial Networks for synthetic data augmentation in imbalanced medical image classification. The project evaluates DCGAN and cDCGAN architectures across multiple loss functions (Hinge, Wasserstein, BCE, MSE) to address malignant skin lesion detection in ISIC dataset. Includes hyperparameter optimization, domain adaptation analysis with DANN, and comprehensive evaluation across ResNet-50, ResNet-18, and AlexNet with both pre-trained and from-scratch training paradigms.',
+    'publications.llm.title': 'Architectures for Code Development with LLMs',
+    'publications.llm.authors': 'Dorotea Monaco',
+    'publications.llm.venue': 'Politecnico di Torino - Large Language Models for Software Engineering Project',
+    'publications.llm.abstract': 'Comparative study of three architectural approaches for automated code generation using Large Language Models: Naive Baseline (one-shot generation), Single-Agent Pipeline (multi-step reasoning orchestrated with LangGraph), and Multi-Agent System (collaborative system with specialized roles: Planner, Coder, and Critic). The project implements workflow orchestration, code execution sandbox, quality metrics evaluation, and provides comprehensive performance analysis across different programming tasks.',
     
     // Contact Section
     'contact.title': 'Get In Touch',

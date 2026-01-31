@@ -11,6 +11,7 @@ export const SiteHeader = () => {
 
   const navItems = [
     { href: "#projects", label: t('nav.projects') },
+    { href: "#publications", label: t('nav.publications') },
     { href: "#skills", label: t('nav.skills') },
     { href: "#about", label: t('nav.about') },
     { href: "#volunteer", label: t('nav.volunteer') },
