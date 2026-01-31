@@ -2,10 +2,15 @@ import geocontrolImg from "@/assets/projects/geocontrol.png";
 import misfortuneImg from "@/assets/projects/misfortune.png";
 import pacmanImg from "@/assets/projects/pacman.png";
 import recipeImg from "@/assets/projects/recipe.png";
+import gan from "@/assets/projects/gan.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
-// Placeholder image for Diabet Predictor - replace with actual screenshot when available
-const diabetPredictorImg = "https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=800";
+// Placeholder image for Machine Learning Projects - replace with actual screenshot when available
+const mlProjectsImg = "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800";
+// Placeholder image for LLM Architectures - replace with actual screenshot when available
+const llmArchitecturesImg = "https://images.pexels.com/photos/8294616/pexels-photo-8294616.jpeg?auto=compress&cs=tinysrgb&w=800";
+// Placeholder image for Participium - replace with actual screenshot when available
+const participiumImg = "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Github } from "lucide-react";
@@ -15,17 +20,50 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: t('projects.misfortune.title'),
-      description: t('projects.misfortune.description'),
-      metrics: "🎯 Responsive design • 🚀 Real-time updates • 🎮 Interactive gameplay",
-      image: misfortuneImg,
-      link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
-      tech: ["JavaScript", "React", "Node.js", "Express"],
+      title: t('projects.gan.title'),
+      description: t('projects.gan.description'),
+      metrics: "🏆 Research-grade quality • 🔬 Clinical applications • 📊 Advanced metrics evaluation",
+      image: gan,
+      tech: ["Python", "PyTorch", "DCGAN", "cDCGAN", "ResNet", "AlexNet", "OpenCV", "scikit-learn"],
+      link: "https://github.com/doroteaMonaco/GAN-for-Data-Augmentation-and-Domain-Adaptation",
+      isFeatured: true,
+      contributors: [
+        {
+          name: "Luigi Gonnella",
+          github: "https://github.com/LuigiGonnella"
+        }
+      ]
+    },
+    {
+      title: t('projects.participium.title'),
+      description: t('projects.participium.description'),
+      metrics: "🏛️ Production-ready architecture • 🔐 Enterprise-grade security • 🚀 Scalable infrastructure",
+      image: participiumImg,
+      tech: ["TypeScript", "React", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker", "Leaflet", "Redis"],
+      link: "https://github.com/doroteaMonaco/Participium-Software",
+      isFeatured: true,
+    },
+    {
+      title: t('projects.llmarchitectures.title'),
+      description: t('projects.llmarchitectures.description'),
+      metrics: "🧠 Advanced AI systems • ⚙️ Complex orchestration • 💻 Code quality automation",
+      image: llmArchitecturesImg,
+      tech: ["Python", "LangGraph", "Ollama", "LLM", "Multi-Agent Systems", "Code Generation", "Qwen", "DeepSeek"],
+      link: "https://github.com/doroteaMonaco/Architectures-for-Code-Development-with-LLMs",
+      isFeatured: true,
+    },
+    {
+      title: t('projects.mlprojects.title'),
+      description: t('projects.mlprojects.description'),
+      metrics: "🎯 High-performance models • 📊 Data-driven insights • 🚀 Production pipelines",
+      image: mlProjectsImg,
+      tech: ["Python", "PyTorch", "TensorFlow", "scikit-learn", "pandas", "numpy", "XGBoost", "matplotlib", "seaborn"],
+      link: "https://github.com/doroteaMonaco/Machine-Learning-Projects",
     },
     {
       title: t('projects.geocontrol.title'),
       description: t('projects.geocontrol.description'),
-      metrics: "📊 Real-time monitoring • 🔔 Automated alerts • 🏗️ Scalable architecture",
+      metrics: "📊 Real-time monitoring • 🔔 Automated alerts • 🏛️ Scalable architecture",
       image: geocontrolImg, 
       tech: ["TypeScript", "Docker", "MySQL", "Node.js"],
       link: "https://github.com/doroteaMonaco/GeoControl-Project-Software-Engeneering",
@@ -33,7 +71,7 @@ export const Projects = () => {
     {
       title: t('projects.ruggine.title'),
       description: t('projects.ruggine.description'),
-      metrics: "💬 Group & private chats • 👥 Friend requests • 🦀 Native Rust performance",
+      metrics: "💬 Secure messaging • 👥 User management • ⚡ Low-latency architecture",
       image: ruggineImg,
       tech: ["Rust", "Iced", "WebSocket", "Redis", "PostgreSQL"],
       link: "https://github.com/doroteaMonaco/Ruggine-App",
@@ -43,6 +81,14 @@ export const Projects = () => {
           github: "https://github.com/LuigiGonnella"
         }
       ]
+    },
+    {
+      title: t('projects.misfortune.title'),
+      description: t('projects.misfortune.description'),
+      metrics: "🎯 Responsive design • 🚀 Real-time updates • 🎮 Interactive gameplay",
+      image: misfortuneImg,
+      link: "https://github.com/doroteaMonaco/Misfortune-Game-Web-App-1",
+      tech: ["JavaScript", "React", "Node.js", "Express"],
     },
       {
   title: t('projects.pacman.title'),
@@ -55,19 +101,11 @@ export const Projects = () => {
     {
       title: t('projects.recapp.title'),
       description: t('projects.recapp.description'),
-      metrics: "🚧 Work in Progress • 🍳 Recipe sharing • 👥 Community features • ⚠️ UI & social features to be implemented",
+      metrics: "🚧 Active development • 🍳 Recipe sharing • 👥 Community features",
       image: recipeImg,
       tech: ["React Router", "Prisma", "PostgreSQL", "Redis", "Supabase", "Vercel", "React", "JavaScript"],
       link: "https://github.com/doroteaMonaco/RecApp",
       isUnderConstruction: true,
-    },
-    {
-      title: t('projects.diabetpredictor.title'),
-      description: t('projects.diabetpredictor.description'),
-      metrics: "🤖 ML algorithms • 📊 Data visualization • 🎯 High accuracy • 🔬 Medical analytics",
-      image: diabetPredictorImg,
-      tech: ["Python", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn"],
-      link: "https://github.com/doroteaMonaco/DiabetPredictor",
     },
   ];
   return (
@@ -117,6 +155,11 @@ export const Projects = () => {
                     <h3 className="text-xl sm:text-2xl font-bold group-hover:text-gradient transition-all duration-300">
                       {p.title}
                     </h3>
+                    {p.isFeatured && (
+                      <Badge variant="outline" className="text-xs bg-brand/10 text-brand border-brand/30">
+                        ⭐ Featured
+                      </Badge>
+                    )}
                     {p.isUnderConstruction && (
                       <Badge variant="outline" className="text-xs bg-yellow-100 text-yellow-800 border-yellow-300 dark:bg-yellow-900 dark:text-yellow-200 dark:border-yellow-600">
                         🚧 Work in Progress

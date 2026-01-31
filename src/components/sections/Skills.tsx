@@ -4,19 +4,19 @@ import { useLanguageContext } from "@/contexts/TranslationContext";
 const technicalSkills = {
   "Frontend": {
     icon: "🎨",
-    skills: ["React", "TypeScript", "JavaScript", "HTML5", "Tailwind CSS"]
+    skills: ["React", "TypeScript", "JavaScript", "HTML5", "Tailwind CSS", "Vite"]
   },
   "Backend": {
     icon: "⚙️",
-    skills: ["Node.js", "Express", "REST APIs", "MySQL", "Supabase"]
+    skills: ["Node.js", "Express", "REST APIs", "MySQL", "PostgreSQL", "Prisma", "Redis", "Supabase"]
   },
   "Tools & DevOps": {
     icon: "🛠️",
-    skills: ["Git", "Docker", "CI/CD", "Testing", "Jest", "Vite"]
+    skills: ["Git", "Docker", "CI/CD", "Testing", "Jest"]
   },
   "Data Science & AI": {
     icon: "🤖",
-    skills: ["PyTorch", "Pandas", "NumPy", "Matplotlib", "LLM", "Machine Learning"]
+    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy", "XGBoost", "OpenCV", "LangGraph", "LLM", "GANs"]
   },
   "Languages": {
     icon: "💻",

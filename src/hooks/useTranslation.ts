@@ -14,7 +14,7 @@ const translations = {
     'nav.hire': 'Assumimi',
     
     // Hero Section
-    'hero.role': 'Software Engineer, AI Engineer, Full Stack Developer',
+    'hero.role': 'Software Engineering • Artificial Intelligence • Computer Vision',
     'hero.currentVolunteer': 'Volontaria AISM',
     'hero.description': 'Il mio obiettivo è costruire soluzioni che vadano oltre le prestazioni, creando tecnologie che fanno davvero la differenza nella vita quotidiana delle persone. Sono particolarmente motivata a sviluppare strumenti e applicazioni che migliorano l\'accessibilità e supportano le persone con disabilità, aiutandole a superare le sfide e a raggiungere l’indipendenza.',
     'hero.viewProjects': 'Vedi Progetti',
@@ -23,9 +23,9 @@ const translations = {
     
     // About Section
     'about.title': 'Chi Sono',
-    'about.subtitle': 'Appassionata di creare soluzioni innovative attraverso la tecnologia e l\'apprendimento continuo.',
+    'about.subtitle': 'Ingegnere del software con specializzazione in AI, computer vision e sviluppo full-stack, dedicata a creare soluzioni tecnologiche innovative e accessibili.',
     'about.journey': 'Il Mio Percorso',
-    'about.content': '🎓 Sono una studentessa di Magistrale in Ingegneria del Software al Politecnico di Torino, appassionata di tecnologia, innovazione e apprendimento continuo. La mia fascinazione risiede nell\'AI, software e tecnologie cloud, e nel loro potenziale di trasformare le vite.\n\n💡 Mi specializzo nella creazione di applicazioni web moderne utilizzando tecnologie all\'avanguardia, con un forte focus su codice pulito, esperienza utente e soluzioni innovative. Sono motivata a costruire software che va oltre le prestazioni, progettando strumenti che migliorano l\'accessibilità e danno potere agli individui, incluse le persone con disabilità.\n\n🤝 La mia esperienza di volontariato con AISM (Associazione Italiana Sclerosi Multipla) ha plasmato il mio approccio, insegnandomi a combinare competenza tecnica con empatia per sviluppare soluzioni incentrate sull\'umano che sono pratiche e significative.\n\n🌱 Mi piace affrontare problemi complessi, trasformare idee in realtà attraverso il codice ed esplorare nuove tecnologie. Quando non sto programmando, contribuisco a progetti open-source e mi tengo aggiornata sulle ultime tendenze nell\'ingegneria del software.\n\n🚀 Sto cercando opportunità in ambienti innovativi e di impatto, dove posso contribuire a progetti di sviluppo software che uniscono tecnologia e impatto sociale mentre continuo a crescere come professionista nell\'industria tech.',
+    'about.content': '🎯 Competenze Tecniche Chiave\n\n• Sviluppo Full-Stack: Architetture production-ready con React, Node.js, TypeScript e PostgreSQL\n• AI/ML Engineering: GANs per augmentation di dati medici, sistemi multi-agente LLM, CNN per computer vision\n• Ingegneria del Software: Design pattern enterprise, sistemi distribuiti, containerizzazione Docker\n• Ricerca Applicata: Analisi in medical imaging, domain adaptation, ottimizzazione algoritmica\n\n🎓 Formazione Accademica\n\nMaster\'s Degree in Ingegneria del Software - Politecnico di Torino\nFocus: AI/ML, Architetture Software, Sistemi Distribuiti\nProgetti: GANs per classificazione di immagini mediche, sistemi multi-agente per code generation, piattaforme civic engagement\n\n💼 Esperienza di Progetto\n\nHo guidato e contribuito allo sviluppo di sistemi complessi che spaziano dalla ricerca in medical imaging (GAN per rilevamento melanoma con valutazione DANN) a piattaforme production-ready (Participium: sistema RBAC con gestione utenti enterprise). La mia esperienza include l\'implementazione di architetture multi-agente con LangGraph, pipeline ML con PyTorch, e applicazioni web scalabili.\n\n🤝 Impatto Sociale\n\nVolontaria attiva con AISM (Associazione Italiana Sclerosi Multipla), applico principi di design inclusivo e accessibilità in ogni progetto. Questa esperienza ha plasmato il mio approccio allo sviluppo software, integrando empatia e competenza tecnica per creare tecnologie che migliorano concretamente la vita delle persone.\n\n🚀 Obiettivi Professionali\n\nCerco opportunità in ambienti innovativi dove posso contribuire a progetti che uniscono eccellenza tecnica e impatto sociale. Particolarmente interessata a ruoli in AI/ML engineering, software architecture, e sviluppo di sistemi che affrontano sfide reali nel healthcare, accessibility, e civic tech.',
     
     
     // Skills Section
@@ -60,9 +60,13 @@ const translations = {
   'projects.pacman.description': 'Un clone di Pacman sviluppato per la scheda Landtiger LPC1768, programmato in Assembly ARM. Gameplay classico, grafica retrò e intelligenza artificiale per i fantasmi.',
   'projects.recapp.title': 'RecApp',
   'projects.recapp.description': 'Forum di ricette sviluppato con React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React e JavaScript. ⚠️ Progetto ancora in fase di sviluppo: l\'interfaccia utente e le funzionalità social devono essere implementate.',
-  'projects.diabetpredictor.title': 'Diabet Predictor',
-  'projects.diabetpredictor.description': 'Sistema di previsione del diabete basato su machine learning che utilizza algoritmi avanzati per analizzare dati medici e prevedere il rischio di diabete. Sviluppato con Python, scikit-learn, pandas e visualizzazioni interattive.',
-    
+  'projects.mlprojects.title': 'Machine Learning Projects',
+  'projects.mlprojects.description': 'Collezione completa di progetti di machine learning e deep learning focalizzati sulla modellazione predittiva in diversi domini: computer vision, diagnosi medica, analisi assicurativa e classificazione multi-classe. Include CIFAR-10, California Housing, Medical Insurance, Transfer Learning con ResNet18, Flower Classification e Diabetes Predictor.',
+  'projects.llmarchitectures.title': 'Architectures for Code Development with LLMs',
+  'projects.llmarchitectures.description': 'Sistema di generazione automatica di codice utilizzando Large Language Models con tre approcci architetturali: Naive Baseline (one-shot), Single-Agent Pipeline (ragionamento multi-step con LangGraph), e Multi-Agent System (sistema collaborativo con ruoli specializzati: Planner, Coder e Critic). Implementa orchestrazione di workflow, esecuzione di codice in sandbox e metriche di qualità.',  'projects.participium.title': 'Participium',
+  'projects.participium.description': 'Piattaforma web completa per facilitare l\'impegno dei cittadini con i servizi municipali. Permette ai residenti di segnalare problemi urbani (illuminazione, buche, rifiuti, perdite d\'acqua) attraverso un\'interfaccia basata su mappa interattiva. Include controllo degli accessi basato sui ruoli, gestione report in tempo reale, sistema di commenti interni e integrazione con manutentori esterni.',
+  'projects.gan.title': 'GAN for Data Augmentation and Domain Adaptation',
+  'projects.gan.description': 'Investigazione sistematica di Generative Adversarial Networks per l\'aumento di dati sintetici nella classificazione di immagini mediche con grave squilibrio di classe, sviluppato in collaborazione con Luigi Gonnella 💜. Valuta architetture DCGAN e cDCGAN attraverso multiple funzioni di loss per affrontare il rilevamento di lesioni cutanee maligne nel dataset ISIC. Include ottimizzazione degli iperparametri, analisi dell\'adattamento del dominio con DANN e valutazione su ResNet, AlexNet.',    
     // Volunteer Section
     'volunteer.title': 'Volontariato',
     'volunteer.subtitle': 'Un percorso di crescita personale e professionale attraverso l\'impegno sociale e la formazione di competenze trasversali.',
@@ -132,7 +136,7 @@ const translations = {
     'nav.hire': 'Hire Me',
     
     // Hero Section
-    'hero.role': 'Software Engineer, AI Engineer, Full Stack Developer',
+    'hero.role': 'Software Engineering • Artificial Intelligence • Computer Vision',
     'hero.currentVolunteer': 'AISM Volunteer',
     'hero.description': 'My goal is to build solutions that go beyond performance, creating technologies that truly make a difference in people\'s daily lives. I am especially motivated to develop tools and applications that improve accessibility and support individuals with disabilities, helping them overcome challenges and gain independence.',
     'hero.viewProjects': 'View Projects',
@@ -141,9 +145,9 @@ const translations = {
     
     // About Section
     'about.title': 'About Me',
-    'about.subtitle': 'Passionate about creating innovative solutions through technology and continuous learning.',
+    'about.subtitle': 'Software engineer specializing in AI, computer vision, and full-stack development, dedicated to building innovative and accessible technology solutions.',
     'about.journey': 'My Journey',
-    'about.content': '🎓 I am a Master\'s student in Software Engineering at Politecnico di Torino, passionate about technology, innovation, and continuous learning. My fascination lies in AI, software, and cloud technologies, and their potential to transform lives.\n\n💡 I specialize in creating modern web applications using cutting-edge technologies, with a strong focus on clean code, user experience, and innovative solutions. I am motivated to build software that goes beyond performance, designing tools that improve accessibility and empower individuals, including those with disabilities.\n\n🤝 My volunteer experience with AISM (Associazione Italiana Sclerosi Multipla) has shaped my approach, teaching me to combine technical expertise with empathy to develop human-centered solutions that are practical and meaningful.\n\n🌱 I enjoy tackling complex problems, turning ideas into reality through code, and exploring new technologies. When I\'m not coding, I contribute to open-source projects and stay up-to-date with the latest trends in software engineering.\n\n🚀 I am seeking opportunities in innovative and impactful environments, where I can contribute to software development projects that merge technology with social impact while continuing to grow as a professional in the tech industry.',
+    'about.content': '🎯 Core Technical Expertise\n\n• Full-Stack Development: Production-ready architectures with React, Node.js, TypeScript, and PostgreSQL\n• AI/ML Engineering: GANs for medical data augmentation, multi-agent LLM systems, CNN for computer vision\n• Software Engineering: Enterprise design patterns, distributed systems, Docker containerization\n• Applied Research: Medical imaging analysis, domain adaptation, algorithmic optimization\n\n🎓 Academic Background\n\nMaster\'s Degree in Software Engineering - Politecnico di Torino\nFocus: AI/ML, Software Architectures, Distributed Systems\nProjects: GANs for medical image classification, multi-agent systems for code generation, civic engagement platforms\n\n💼 Project Experience\n\nI have led and contributed to the development of complex systems ranging from medical imaging research (GANs for melanoma detection with DANN evaluation) to production-ready platforms (Participium: RBAC system with enterprise user management). My experience includes implementing multi-agent architectures with LangGraph, ML pipelines with PyTorch, and scalable web applications.\n\n🤝 Social Impact\n\nActive volunteer with AISM (Italian Multiple Sclerosis Association), I apply inclusive design and accessibility principles to every project. This experience has shaped my approach to software development, integrating empathy with technical expertise to create technologies that tangibly improve people\'s lives.\n\n🚀 Professional Goals\n\nSeeking opportunities in innovative environments where I can contribute to projects that unite technical excellence with social impact. Particularly interested in roles in AI/ML engineering, software architecture, and developing systems that address real challenges in healthcare, accessibility, and civic tech.',
     
     
     // Skills Section
@@ -178,9 +182,13 @@ const translations = {
   'projects.pacman.description': 'A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.',
   'projects.recapp.title': 'RecApp',
   'projects.recapp.description': 'Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, React and JavaScript. ⚠️ Project under active development: UI and social features are still to be implemented.',
-  'projects.diabetpredictor.title': 'Diabet Predictor',
-  'projects.diabetpredictor.description': 'Machine learning-based diabetes prediction system that uses advanced algorithms to analyze medical data and predict diabetes risk. Developed with Python, scikit-learn, pandas, and interactive visualizations.',
-    
+  'projects.mlprojects.title': 'Machine Learning Projects',
+  'projects.mlprojects.description': 'Comprehensive collection of machine learning and deep learning projects focused on predictive modeling across different domains: computer vision, medical diagnosis, insurance analytics, and multi-class classification. Includes CIFAR-10, California Housing, Medical Insurance, Transfer Learning with ResNet18, Flower Classification, and Diabetes Predictor.',
+  'projects.llmarchitectures.title': 'Architectures for Code Development with LLMs',
+  'projects.llmarchitectures.description': 'Automated code generation system using Large Language Models with three architectural approaches: Naive Baseline (one-shot), Single-Agent Pipeline (multi-step reasoning with LangGraph), and Multi-Agent System (collaborative system with specialized roles: Planner, Coder, and Critic). Implements workflow orchestration, code execution sandbox, and quality metrics.',  'projects.participium.title': 'Participium',
+  'projects.participium.description': 'Comprehensive web platform facilitating citizen engagement with municipal services. Enables residents to report urban issues (streetlights, potholes, garbage, water leaks) through an interactive map-based interface. Features role-based access control, real-time report management, internal comments system, and external maintainer integration.',
+  'projects.gan.title': 'GAN for Data Augmentation and Domain Adaptation',
+  'projects.gan.description': 'Systematic investigation of Generative Adversarial Networks for synthetic data augmentation in imbalanced medical image classification, developed in collaboration with Luigi Gonnella 💜. Evaluates DCGAN and cDCGAN architectures across multiple loss functions to address malignant skin lesion detection in ISIC dataset. Includes hyperparameter optimization, domain adaptation analysis with DANN, and evaluation across ResNet, AlexNet.',    
     // Volunteer Section
     'volunteer.title': 'Volunteer Work',
     'volunteer.subtitle': 'A journey of personal and professional growth through social commitment and the development of cross-functional skills.',
