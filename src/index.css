@@ -145,6 +145,29 @@
   a {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm;
   }
+
+  /* Smooth theme transitions - prevent FOUT */
+  .theme-transitioning,
+  .theme-transitioning *,
+  .theme-transitioning *::before,
+  .theme-transitioning *::after {
+    transition: background-color 300ms ease-in-out,
+                border-color 300ms ease-in-out,
+                color 300ms ease-in-out !important;
+  }
+}
+
+/* Prevent flash of unstyled content on initial load */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    color-scheme: light;
+  }
 }
 
 /* Utilities & components moderni per portfolio professionale */

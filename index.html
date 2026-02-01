@@ -20,6 +20,22 @@
     
   <meta name="twitter:image" content="/logo.png" />
   <link rel="icon" type="image/png" href="/logo.png" />
+  
+  <!-- Prevent flash of unstyled content (FOUT) - Apply theme before page renders -->
+  <script>
+    (function() {
+      const storageKey = 'portfolio-theme';
+      const theme = localStorage.getItem(storageKey);
+      
+      if (theme === 'light' || theme === 'dark') {
+        document.documentElement.classList.add(theme);
+      } else {
+        // Auto-detect system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.add(prefersDark ? 'dark' : 'light');
+      }
+    })();
+  </script>
   </head>
 
   <body>
