@@ -24,7 +24,7 @@ export const Projects = () => {
       description: t('projects.gan.description'),
       metrics: "🏆 Research-grade quality • 🔬 Clinical applications • 📊 Advanced metrics evaluation",
       image: gan,
-      tech: ["Python", "PyTorch", "DCGAN", "cDCGAN", "ResNet", "AlexNet", "OpenCV", "scikit-learn"],
+      tech: ["Python", "PyTorch", "DCGAN", "cDCGAN", "ResNet", "AlexNet", "scikit-learn"],
       link: "https://github.com/doroteaMonaco/GAN-for-Data-Augmentation-and-Domain-Adaptation",
       isFeatured: true,
       contributors: [

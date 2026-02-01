@@ -18,35 +18,55 @@ const faqs = [
   {
     id: 'about',
     question: 'Tell me about yourself',
-    answer: `Hi! I'm Dorotea Monaco, a Computer Engineering student at Politecnico di Torino. I specialize in full-stack development using React, TypeScript, Node.js, and modern databases.`,
+    answer: `Hi! I'm Dorotea Monaco, a Master's student in Software Engineering at Politecnico di Torino. I specialize in full-stack development, AI/ML, and building accessible solutions using React, TypeScript, Node.js, Python, and modern databases.`,
     keywords: ['about', 'who', 'yourself', 'dorotea', 'background'],
-    quickReplies: ['Skills', 'Projects', 'Experience']
+    quickReplies: ['Skills', 'Projects', 'Publications']
   },
   {
     id: 'skills',
     question: 'What are your technical skills?',
     answer: `My technical stack includes:
 
-🖥️ Frontend: React, TypeScript, Next.js, TailwindCSS
-⚙️ Backend: Node.js, Express, Python
-🗄️ Databases: PostgreSQL, MongoDB, Supabase
-☁️ Cloud: Docker, AWS, Vercel, Git
+🖥️ Frontend: React, TypeScript, JavaScript, HTML5, TailwindCSS, Vite
+⚙️ Backend: Node.js, Express, Python, REST APIs
+🗄️ Databases: PostgreSQL, MySQL, Supabase, Redis, Prisma
+🤖 AI/ML: PyTorch, TensorFlow, scikit-learn, XGBoost, LangGraph, GANs
+🛠️ Tools: Docker, Git, CI/CD
+💻 Languages: Python, TypeScript, JavaScript, Rust, C, Java, SQL
 
 I'm always eager to learn new technologies!`,
     keywords: ['skills', 'technologies', 'stack', 'programming'],
-    quickReplies: ['Projects', 'Experience', 'Contact']
+    quickReplies: ['Projects', 'Publications', 'Contact']
   },
   {
     id: 'projects',
     question: 'What projects have you worked on?',
     answer: `Here are some of my key projects:
 
-🎮 Misfortune Tracker: Gaming statistics with real-time visualization
+🧠 GAN for Medical Imaging: Deep learning for data augmentation
+🏛️ Participium: Democratic participation platform
+🤖 LLM Architectures: Multi-agent code generation system
+📊 Machine Learning Projects: ML models and pipelines
 🌍 GeoControl: Location-based management system
+💬 Ruggine: Rust chat application
+🎮 Misfortune Tracker: Gaming statistics
+👾 Pacman: ARM assembly game
 
-You can view detailed information in the Projects section!`,
-    keywords: ['projects', 'work', 'portfolio', 'built'],
+View detailed information in the Projects section!`,
+    keywords: ['projects', 'work', 'portfolio', 'built', 'gan', 'participium', 'llm', 'ml'],
     quickReplies: ['View Projects', 'Skills', 'Contact']
+  },
+  {
+    id: 'publications',
+    question: 'What research have you done?',
+    answer: `I've worked on research publications:
+
+📄 GANs for Medical Image Classification (2025)
+📄 Architectures for Code Development with LLMs (2025)
+
+Both demonstrate my research in AI and software engineering.`,
+    keywords: ['publications', 'research', 'paper', 'gan', 'llm'],
+    quickReplies: ['Projects', 'Skills', 'Contact']
   },
   {
     id: 'contact',
@@ -64,7 +84,7 @@ I typically respond within 24 hours!`,
   }
 ];
 
-const defaultQuickReplies = ['About yourself', 'Your skills', 'Your projects', 'Contact info'];
+const defaultQuickReplies = ['About yourself', 'Your skills', 'Your projects', 'Publications', 'Contact info'];
 
 export const SimpleChatbot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

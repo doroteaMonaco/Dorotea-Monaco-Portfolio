@@ -50,39 +50,45 @@ I specialize in full-stack development with modern technologies like React, Type
     question: 'What are your technical skills?',
     answer: `My technical stack includes:
     
-🖥️ **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS
-⚙️ **Backend**: Node.js, Express, REST APIs, MySQL, Supabase
+🖥️ **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS, Vite
+⚙️ **Backend**: Node.js, Express, REST APIs, MySQL, PostgreSQL, Prisma, Redis, Supabase
 🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis
-🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Machine Learning
+🤖 **Data Science & AI**: PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Machine Learning, Deep Learning, GANs, LangGraph, LLM
 🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
-🗣️ **Languages**: Python, C, Java, Assembly ARM
+💻 **Programming Languages**: Python, JavaScript, TypeScript, C, Java, Rust, SQL, Assembly ARM
 
-� **Soft Skills**: Effective Communication, Problem Solving, Adaptability, Critical Thinking, Creativity, Time Management, Project Management, Cross-functional Teamwork
+💡 **Soft Skills**: Effective Communication, Problem Solving, Adaptability, Critical Thinking, Creativity, Time Management, Project Management, Cross-functional Teamwork
 
-I'm always eager to learn new technologies and stay updated with industry trends, especially in AI and accessibility!`,
-    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch', 'scikit-learn', 'pandas', 'numpy', 'matplotlib', 'seaborn'],
-    quickReplies: ['Projects', 'Volunteer Work', 'Contact']
+I'm always eager to learn new technologies and stay updated with industry trends, especially in AI, machine learning, and accessibility!`,
+    keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch', 'tensorflow', 'scikit-learn', 'pandas', 'numpy', 'matplotlib', 'seaborn', 'xgboost', 'langgraph', 'llm', 'gan', 'prisma', 'rust'],
+    quickReplies: ['Projects', 'Publications', 'Volunteer Work', 'Contact']
   },
   {
     id: 'projects',
     question: 'What projects have you worked on?',
     answer: `Here are some of my key projects:
 
-🎮 **Misfortune Tracker**: A comprehensive gaming statistics application featuring real-time data visualization, user analytics, and performance tracking. Built with React and modern technologies.
+🧠 **GAN for Data Augmentation**: Research-grade medical imaging project using DCGANs and cDCGANs for data augmentation and domain adaptation. Implemented with PyTorch, ResNet, AlexNet, and advanced evaluation metrics. Achieved clinical-quality results for medical image classification (developed with Luigi Gonnella).
 
-🌍 **GeoControl**: Advanced location-based management system for geographical data processing, mapping, and spatial analysis. Integrates modern APIs for accurate geographical insights.
+🏛️ **Participium**: Production-ready democratic participation platform with enterprise-grade security and scalable architecture. Built with TypeScript, React, Node.js, Express, PostgreSQL, Prisma, Docker, and Redis. Features real-time location-based services using Leaflet.
 
-💬 **Ruggine**: Modern chat application built with Rust featuring native GUI interface, developed in collaboration with Luigi Gonnella 💜. Uses WebSocket and Redis for group chats, private messaging, and friend requests.
+🤖 **LLM Architectures for Code Development**: Advanced AI system implementing multi-agent architectures for automated code generation and quality assurance. Uses LangGraph, Ollama, Qwen, and DeepSeek for complex orchestration and code development workflows.
 
-👾 **Pacman**: A Pacman clone developed for the Landtiger LPC1768 board, programmed in ARM assembly. Features classic gameplay, retro graphics, and AI-driven ghosts.
+📊 **Machine Learning Projects**: Collection of high-performance ML models including diabetes prediction, sentiment analysis, and data pipelines. Built with PyTorch, TensorFlow, scikit-learn, XGBoost, pandas, numpy, and comprehensive visualizations.
 
-🍳 **RecApp**: Recipe forum built with React Router, Prisma, PostgreSQL, Redis, Supabase, Vercel, and JavaScript. Currently under development with UI and social features to be implemented.
+🌍 **GeoControl**: Real-time geographical monitoring system with automated alerts and scalable architecture. Built with TypeScript, Docker, MySQL, and Node.js for location-based management and spatial analysis.
 
-🤖 **Diabet Predictor**: Machine learning-based diabetes prediction system that uses advanced algorithms to analyze medical data and predict diabetes risk. Developed with Python, scikit-learn, pandas, and interactive visualizations.
+💬 **Ruggine**: Modern chat application built with Rust featuring native GUI interface (Iced), WebSocket for real-time messaging, and Redis for session management. Supports group chats, private messaging, and friend requests (developed with Luigi Gonnella).
 
-Each project demonstrates my problem-solving skills and technical expertise across different technologies!`,
-    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'misfortune', 'geocontrol', 'ruggine', 'pacman', 'recapp', 'diabet', 'predictor', 'machine learning', 'ml', 'chat', 'rust'],
-    quickReplies: ['View Projects', 'Skills', 'Contact']
+🎮 **Misfortune Tracker**: Gaming statistics application with real-time data visualization, user analytics, and interactive gameplay tracking. Built with JavaScript, React, Node.js, and Express.
+
+👾 **Pacman**: Retro Pacman clone for Landtiger LPC1768 board programmed in ARM assembly, featuring classic gameplay, AI-driven ghosts, and authentic retro graphics.
+
+🍳 **RecApp**: Recipe sharing forum under active development. Built with React Router, Prisma, PostgreSQL, Redis, Supabase, and Vercel. Community features and UI enhancements coming soon.
+
+Each project showcases my expertise in modern technologies, from AI/ML to full-stack development and low-level programming!`,
+    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
+    quickReplies: ['View Projects', 'Skills', 'Publications', 'Contact']
   },
   {
     id: 'volunteer',
@@ -190,17 +196,36 @@ I'm flexible and adaptable to different working arrangements!`,
     question: 'What technologies do you use?',
     answer: `I work with modern, industry-standard technologies:
 
-🎨 **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS
+🎨 **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS, Vite
 ⚡ **Backend**: Node.js, Express, REST APIs, Python
-🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis
-🤖 **Data Science & AI**: PyTorch, Pandas, NumPy, Matplotlib, LLM, Machine Learning
+🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis, Prisma
+🤖 **Data Science & AI**: PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, LangGraph, LLM, GANs, Machine Learning, Deep Learning
 🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
-�️ **Programming Languages**: Python, C, Java, Assembly ARM
+💻 **Programming Languages**: Python, JavaScript, TypeScript, C, Java, Rust, SQL, Assembly ARM
 ☁️ **Cloud & Deployment**: Vercel, Supabase, Docker
 
-I stay updated with the latest trends in web development and AI technologies, and am always eager to learn new tools that can improve project outcomes and user accessibility!`,
-    keywords: ['technologies', 'tech', 'tools', 'framework', 'library', 'database', 'ai', 'machine learning', 'pytorch'],
-    quickReplies: ['View Projects', 'Skills', 'AI Experience']
+I stay updated with the latest trends in web development, AI technologies, and always eager to learn new tools that can improve project outcomes and user accessibility!`,
+    keywords: ['technologies', 'tech', 'tools', 'framework', 'library', 'database', 'ai', 'machine learning', 'pytorch', 'tensorflow', 'xgboost', 'langgraph', 'llm', 'gan', 'prisma', 'rust'],
+    quickReplies: ['View Projects', 'Skills', 'AI Experience', 'Publications']
+  },
+  {
+    id: 'publications',
+    question: 'What research or publications have you worked on?',
+    answer: `I've worked on research projects that have resulted in academic publications:
+
+📄 **GANs for Data Augmentation in Imbalanced Medical Image Classification** (2025)
+Authors: Dorotea Monaco, Luigi Gonnella
+This research explores using Generative Adversarial Networks (DCGANs and cDCGANs) for medical image data augmentation and domain adaptation. We achieved clinical-quality results for addressing class imbalance in medical imaging datasets.
+Tags: Machine Learning, Medical Imaging, GANs, Deep Learning
+
+📄 **Architectures for Code Development with LLMs** (2025)
+Author: Dorotea Monaco
+This work investigates multi-agent architectures using Large Language Models for automated code generation and quality assurance. Implemented advanced orchestration systems with LangGraph and Ollama.
+Tags: Large Language Models, Software Engineering, Multi-Agent Systems, Code Generation
+
+Both publications demonstrate my research capabilities in AI, machine learning, and software engineering, combining theoretical knowledge with practical implementation.`,
+    keywords: ['publications', 'research', 'paper', 'academic', 'gan', 'llm', 'medical imaging', 'code generation', 'writing', 'publish'],
+    quickReplies: ['View Publications', 'Projects', 'AI Experience', 'Contact']
   },
   {
     id: 'education',

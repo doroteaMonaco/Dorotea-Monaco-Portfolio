@@ -16,7 +16,7 @@ const technicalSkills = {
   },
   "Data Science & AI": {
     icon: "🤖",
-    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy", "XGBoost", "OpenCV", "LangGraph", "LLM", "GANs"]
+    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy", "XGBoost", "LangGraph", "LLM", "GANs"]
   },
   "Languages": {
     icon: "💻",
