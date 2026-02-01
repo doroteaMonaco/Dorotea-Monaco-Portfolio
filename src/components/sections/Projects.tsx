@@ -3,14 +3,14 @@ import misfortuneImg from "@/assets/projects/misfortune.png";
 import pacmanImg from "@/assets/projects/pacman.png";
 import recipeImg from "@/assets/projects/recipe.png";
 import gan from "@/assets/projects/gan.png";
+import ruggine from "@/assets/projects/ruggine.png";
+import llm from "@/assets/projects/llm.png";
+import ml from "@/assets/projects/ml.png";
+import participium from "@/assets/projects/participium.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
-const ruggineImg = "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800";
 // Placeholder image for Machine Learning Projects - replace with actual screenshot when available
-const mlProjectsImg = "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800";
 // Placeholder image for LLM Architectures - replace with actual screenshot when available
-const llmArchitecturesImg = "https://images.pexels.com/photos/8294616/pexels-photo-8294616.jpeg?auto=compress&cs=tinysrgb&w=800";
 // Placeholder image for Participium - replace with actual screenshot when available
-const participiumImg = "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 import { Github } from "lucide-react";
@@ -38,16 +38,17 @@ export const Projects = () => {
       title: t('projects.participium.title'),
       description: t('projects.participium.description'),
       metrics: "🏛️ Production-ready architecture • 🔐 Enterprise-grade security • 🚀 Scalable infrastructure",
-      image: participiumImg,
+      image: participium,
       tech: ["TypeScript", "React", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker", "Leaflet", "Redis"],
       link: "https://github.com/doroteaMonaco/Participium-Software",
+      video: "https://www.youtube.com/watch?v=bokMVa_Jtow",
       isFeatured: true,
     },
     {
       title: t('projects.llmarchitectures.title'),
       description: t('projects.llmarchitectures.description'),
       metrics: "🧠 Advanced AI systems • ⚙️ Complex orchestration • 💻 Code quality automation",
-      image: llmArchitecturesImg,
+      image: llm,
       tech: ["Python", "LangGraph", "Ollama", "LLM", "Multi-Agent Systems", "Code Generation", "Qwen", "DeepSeek"],
       link: "https://github.com/doroteaMonaco/Architectures-for-Code-Development-with-LLMs",
       isFeatured: true,
@@ -56,7 +57,7 @@ export const Projects = () => {
       title: t('projects.mlprojects.title'),
       description: t('projects.mlprojects.description'),
       metrics: "🎯 High-performance models • 📊 Data-driven insights • 🚀 Production pipelines",
-      image: mlProjectsImg,
+      image: ml,
       tech: ["Python", "PyTorch", "TensorFlow", "scikit-learn", "pandas", "numpy", "XGBoost", "matplotlib", "seaborn"],
       link: "https://github.com/doroteaMonaco/Machine-Learning-Projects",
     },
@@ -72,7 +73,7 @@ export const Projects = () => {
       title: t('projects.ruggine.title'),
       description: t('projects.ruggine.description'),
       metrics: "💬 Secure messaging • 👥 User management • ⚡ Low-latency architecture",
-      image: ruggineImg,
+      image: ruggine,
       tech: ["Rust", "Iced", "WebSocket", "Redis", "PostgreSQL"],
       link: "https://github.com/doroteaMonaco/Ruggine-App",
       contributors: [
@@ -184,6 +185,23 @@ export const Projects = () => {
                       </Badge>
                     ))}
                   </div>
+                  
+                  {p.video && (
+                    <div className="mt-4 border-t border-border/50 pt-4">
+                      <a
+                        href={p.video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-red-50 dark:bg-red-950/30 hover:bg-red-100 dark:hover:bg-red-950/50 text-red-600 dark:text-red-400 border border-red-200 dark:border-red-800 transition-colors text-sm font-medium"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        <span>Watch Teaser Video</span>
+                      </a>
+                    </div>
+                  )}
                   
                   {p.contributors && (
                     <div className="border-t border-border/50 pt-4">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { LanguageToggle } from "@/components/ui/language-toggle";
@@ -8,38 +9,49 @@ import { Menu, X, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 export const SiteHeader = () => {
   const [open, setOpen] = useState(false);
   const { t } = useLanguageContext();
+  const location = useLocation();
 
   const navItems = [
-    { href: "#projects", label: t('nav.projects') },
-    { href: "#publications", label: t('nav.publications') },
-    { href: "#skills", label: t('nav.skills') },
-    { href: "#about", label: t('nav.about') },
-    { href: "#volunteer", label: t('nav.volunteer') },
-    { href: "#contact", label: t('nav.contact') },
+    { href: "/projects", label: t('nav.projects'), type: "route" },
+    { href: "/experience", label: "Experience", type: "route" },
+    { href: "/#skills", label: t('nav.skills'), type: "scroll" },
+    { href: "/resources", label: "Resources", type: "route" },
+    { href: "/#contact", label: t('nav.contact'), type: "scroll" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full glass-floating border-b border-border/40 backdrop-blur-xl backdrop-saturate-150">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between flex-wrap gap-y-2">
-          <a href="#home" className="flex items-center gap-3 font-semibold group">
+          <Link to="/" className="flex items-center gap-3 font-semibold group">
             <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
               <span className="text-white font-bold text-base">D</span>
             </div>
             <span className="text-gradient text-lg hidden sm:block">Dorotea Monaco</span>
             <span className="sr-only">Home</span>
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
             {navItems.map((item) => (
-              <a 
-                key={item.href} 
-                href={item.href} 
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-lg hover:bg-accent/10 transition-all duration-200 relative group"
-              >
-                {item.label}
-                <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-gradient-primary scale-x-0 transition-transform duration-300 group-hover:scale-x-100 rounded-full"></span>
-              </a>
+              item.type === "route" ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-lg hover:bg-accent/10 transition-all duration-200 relative group"
+                >
+                  {item.label}
+                  <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-gradient-primary scale-x-0 transition-transform duration-300 group-hover:scale-x-100 rounded-full"></span>
+                </Link>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-lg hover:bg-accent/10 transition-all duration-200 relative group"
+                >
+                  {item.label}
+                  <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-gradient-primary scale-x-0 transition-transform duration-300 group-hover:scale-x-100 rounded-full"></span>
+                </a>
+              )
             ))}
           </nav>
 
@@ -77,12 +89,12 @@ export const SiteHeader = () => {
               </a>
             </div>
             
-            <a href="#contact">
+            <Link to="/#contact">
               <Button variant="gradient" size="sm" className="ml-2">
                 <span className="hidden lg:inline">💼 {t('nav.hire')}</span>
                 <span className="lg:hidden">{t('nav.hire')}</span>
               </Button>
-            </a>
+            </Link>
           </div>
 
           <button
@@ -99,14 +111,25 @@ export const SiteHeader = () => {
           <div className="md:hidden pb-6 border-t border-border/20 mt-4 pt-4">
             <nav className="flex flex-col gap-3" aria-label="Mobile">
               {navItems.map((item) => (
-                <a 
-                  key={item.href} 
-                  href={item.href} 
-                  className="text-base py-3 px-4 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-all duration-300 font-medium" 
-                  onClick={() => setOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.type === "route" ? (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="text-base py-3 px-4 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-all duration-300 font-medium"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="text-base py-3 px-4 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-all duration-300 font-medium"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               
               <div className="flex items-center justify-center gap-3 py-4">

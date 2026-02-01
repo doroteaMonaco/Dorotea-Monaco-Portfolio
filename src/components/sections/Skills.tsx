@@ -1,26 +1,68 @@
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
+import { Progress } from "@/components/ui/progress";
+import { useState } from "react";
 
 const technicalSkills = {
   "Frontend": {
     icon: "🎨",
-    skills: ["React", "TypeScript", "JavaScript", "HTML5", "Tailwind CSS", "Vite"]
+    skills: [
+      { name: "React", proficiency: 90, projects: 8 },
+      { name: "TypeScript", proficiency: 85, projects: 7 },
+      { name: "JavaScript", proficiency: 95, projects: 10 },
+      { name: "HTML5", proficiency: 95, projects: 10 },
+      { name: "Tailwind CSS", proficiency: 90, projects: 6 },
+      { name: "Vite", proficiency: 80, projects: 5 }
+    ]
   },
   "Backend": {
     icon: "⚙️",
-    skills: ["Node.js", "Express", "REST APIs", "MySQL", "PostgreSQL", "Prisma", "Redis", "Supabase"]
+    skills: [
+      { name: "Node.js", proficiency: 85, projects: 6 },
+      { name: "Express", proficiency: 80, projects: 5 },
+      { name: "REST APIs", proficiency: 90, projects: 7 },
+      { name: "MySQL", proficiency: 75, projects: 4 },
+      { name: "PostgreSQL", proficiency: 80, projects: 5 },
+      { name: "Prisma", proficiency: 85, projects: 4 },
+      { name: "Redis", proficiency: 70, projects: 2 },
+      { name: "Supabase", proficiency: 75, projects: 3 }
+    ]
   },
   "Tools & DevOps": {
     icon: "🛠️",
-    skills: ["Git", "Docker", "CI/CD", "Testing", "Jest"]
+    skills: [
+      { name: "Git", proficiency: 90, projects: 10 },
+      { name: "Docker", proficiency: 75, projects: 4 },
+      { name: "CI/CD", proficiency: 70, projects: 3 },
+      { name: "Testing", proficiency: 80, projects: 6 },
+      { name: "Jest", proficiency: 75, projects: 5 }
+    ]
   },
   "Data Science & AI": {
     icon: "🤖",
-    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy", "XGBoost", "LangGraph", "LLM", "GANs"]
+    skills: [
+      { name: "PyTorch", proficiency: 85, projects: 4 },
+      { name: "TensorFlow", proficiency: 80, projects: 3 },
+      { name: "scikit-learn", proficiency: 85, projects: 5 },
+      { name: "Pandas", proficiency: 90, projects: 6 },
+      { name: "NumPy", proficiency: 90, projects: 6 },
+      { name: "XGBoost", proficiency: 75, projects: 3 },
+      { name: "LangGraph", proficiency: 70, projects: 2 },
+      { name: "LLM", proficiency: 75, projects: 3 },
+      { name: "GANs", proficiency: 80, projects: 2 }
+    ]
   },
   "Languages": {
     icon: "💻",
-    skills: ["JavaScript", "TypeScript", "Python", "Java", "C", "SQL", "Rust"]
+    skills: [
+      { name: "JavaScript", proficiency: 95, projects: 10 },
+      { name: "TypeScript", proficiency: 85, projects: 7 },
+      { name: "Python", proficiency: 90, projects: 8 },
+      { name: "Java", proficiency: 80, projects: 5 },
+      { name: "C", proficiency: 75, projects: 4 },
+      { name: "SQL", proficiency: 85, projects: 6 },
+      { name: "Rust", proficiency: 70, projects: 2 }
+    ]
   }
 };
 
@@ -37,6 +79,8 @@ const softSkills = [
 
 export const Skills = () => {
   const { t } = useLanguageContext();
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [showProficiency, setShowProficiency] = useState(true);
   
   // Mappa delle traduzioni per le categorie
   const getCategoryTranslation = (category: string) => {
@@ -48,6 +92,20 @@ export const Skills = () => {
       "Languages": t('skills.programming')
     };
     return translations[category] || category;
+  };
+
+  const getProficiencyLabel = (proficiency: number) => {
+    if (proficiency >= 90) return "Expert";
+    if (proficiency >= 80) return "Advanced";
+    if (proficiency >= 70) return "Intermediate";
+    return "Learning";
+  };
+
+  const getProficiencyColor = (proficiency: number) => {
+    if (proficiency >= 90) return "text-green-600 dark:text-green-400";
+    if (proficiency >= 80) return "text-blue-600 dark:text-blue-400";
+    if (proficiency >= 70) return "text-yellow-600 dark:text-yellow-400";
+    return "text-orange-600 dark:text-orange-400";
   };
   
   return (
@@ -62,6 +120,18 @@ export const Skills = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('skills.subtitle')}
           </p>
+          
+          {/* Toggle for proficiency view */}
+          <div className="mt-6 flex items-center justify-center gap-4">
+            <button
+              onClick={() => setShowProficiency(!showProficiency)}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
+            >
+              <span className="text-sm font-medium">
+                {showProficiency ? "Hide" : "Show"} Proficiency Levels
+              </span>
+            </button>
+          </div>
         </div>
         
         {/* Technical Skills */}
@@ -73,7 +143,7 @@ export const Skills = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground">{t('skills.programming')}</h3>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {Object.entries(technicalSkills).map(([category, data], index) => (
               <div 
                 key={category} 
@@ -89,17 +159,31 @@ export const Skills = () => {
                   </h4>
                 </div>
                 
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {data.skills.map((skill, skillIndex) => (
                     <div 
-                      key={skill} 
-                      className="flex items-center gap-3 group/skill"
+                      key={skill.name} 
+                      className="group/skill"
                       style={{ animationDelay: `${(index * 150) + (skillIndex * 50)}ms` }}
                     >
-                      <div className="w-2 h-2 rounded-full bg-gradient-primary group-hover/skill:scale-150 transition-transform duration-300"></div>
-                      <span className="text-sm text-muted-foreground group-hover/skill:text-foreground group-hover/skill:font-medium transition-all duration-300">
-                        {skill}
-                      </span>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-sm font-medium text-foreground">
+                          {skill.name}
+                        </span>
+                        {showProficiency && (
+                          <span className={`text-xs font-medium ${getProficiencyColor(skill.proficiency)}`}>
+                            {getProficiencyLabel(skill.proficiency)}
+                          </span>
+                        )}
+                      </div>
+                      {showProficiency && (
+                        <div className="mb-1">
+                          <Progress value={skill.proficiency} className="h-2" />
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <span>{skill.projects} projects</span>
+                      </div>
                     </div>
                   ))}
                 </div>

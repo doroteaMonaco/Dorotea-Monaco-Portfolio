@@ -2,6 +2,7 @@ import { useState, useCallback, type CSSProperties } from "react";
 import { Button } from "@/components/ui/button";
 import { CvDropdown } from "@/components/ui/cv-dropdown";
 import { useLanguageContext } from "@/contexts/TranslationContext";
+import { Stats } from "@/components/ui/stats";
 
 export const Hero = () => {
   const [pos, setPos] = useState({ x: "50%", y: "50%" });
@@ -63,6 +64,16 @@ export const Hero = () => {
                 <CvDropdown />
               </div>
             </div>
+
+            {/* Stats */}
+            <Stats 
+              stats={[
+                { value: 10, label: "Projects Completed", suffix: "+", icon: "🚀" },
+                { value: 2, label: "Research Papers", icon: "📄" },
+                { value: 3, label: "Years Volunteering", suffix: "+", icon: "❤️" },
+                { value: 8, label: "Tech Stacks", suffix: "+", icon: "💻" }
+              ]}
+            />
           </div>
         </div>
       </div>

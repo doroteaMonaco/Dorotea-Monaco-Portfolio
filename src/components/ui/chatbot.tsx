@@ -61,34 +61,43 @@ I specialize in full-stack development with modern technologies like React, Type
 
 I'm always eager to learn new technologies and stay updated with industry trends, especially in AI, machine learning, and accessibility!`,
     keywords: ['skills', 'technologies', 'stack', 'programming', 'languages', 'tech', 'ai', 'machine learning', 'pytorch', 'tensorflow', 'scikit-learn', 'pandas', 'numpy', 'matplotlib', 'seaborn', 'xgboost', 'langgraph', 'llm', 'gan', 'prisma', 'rust'],
-    quickReplies: ['Projects', 'Publications', 'Volunteer Work', 'Contact']
+    quickReplies: ['Projects', 'Research Papers', 'Volunteer Work', 'Contact']
   },
   {
     id: 'projects',
     question: 'What projects have you worked on?',
     answer: `Here are some of my key projects:
 
-🧠 **GAN for Data Augmentation**: Research-grade medical imaging project using DCGANs and cDCGANs for data augmentation and domain adaptation. Implemented with PyTorch, ResNet, AlexNet, and advanced evaluation metrics. Achieved clinical-quality results for medical image classification (developed with Luigi Gonnella).
+🧠 **GAN for Data Augmentation and Domain Adaptation** (2025)
+Research-grade medical imaging project using DCGANs and cDCGANs for data augmentation and domain adaptation in imbalanced medical image classification. Implemented with PyTorch, including comprehensive evaluation across ResNet-50, ResNet-18, and AlexNet architectures. Achieved clinical-quality results for melanoma detection in ISIC dataset (developed with Luigi Gonnella).
 
-🏛️ **Participium**: Production-ready democratic participation platform with enterprise-grade security and scalable architecture. Built with TypeScript, React, Node.js, Express, PostgreSQL, Prisma, Docker, and Redis. Features real-time location-based services using Leaflet.
+🏛️ **Participium** (2024)
+Production-ready democratic participation platform with enterprise-grade security and scalable architecture. Citizens can report urban issues (streetlights, potholes, water leaks) through an interactive map interface. Features role-based access control (RBAC), real-time report management, internal comments, and external maintainer integration. Built with TypeScript, React, Node.js, Express, PostgreSQL, Prisma, Docker, Redis, and Leaflet.
 
-🤖 **LLM Architectures for Code Development**: Advanced AI system implementing multi-agent architectures for automated code generation and quality assurance. Uses LangGraph, Ollama, Qwen, and DeepSeek for complex orchestration and code development workflows.
+🤖 **LLM Architectures for Code Development** (2025)
+Advanced AI system implementing three architectural approaches for automated code generation: Naive Baseline (one-shot), Single-Agent Pipeline (multi-step reasoning with LangGraph), and Multi-Agent System (specialized roles: Planner, Coder, Critic). Implements workflow orchestration, code execution sandbox, and comprehensive quality metrics evaluation using Ollama, Qwen, and DeepSeek.
 
-📊 **Machine Learning Projects**: Collection of high-performance ML models including diabetes prediction, sentiment analysis, and data pipelines. Built with PyTorch, TensorFlow, scikit-learn, XGBoost, pandas, numpy, and comprehensive visualizations.
+📊 **Machine Learning Projects** (2024-2025)
+Comprehensive collection of ML/DL models across different domains: CIFAR-10 classification, California Housing prediction, Medical Insurance analytics, Transfer Learning with ResNet18, Flower Classification, and Diabetes Predictor. Built with PyTorch, TensorFlow, scikit-learn, XGBoost, pandas, numpy, and advanced visualizations.
 
-🌍 **GeoControl**: Real-time geographical monitoring system with automated alerts and scalable architecture. Built with TypeScript, Docker, MySQL, and Node.js for location-based management and spatial analysis.
+🌍 **GeoControl** (2024)
+Real-time environmental monitoring system with automated data collection from sensors, geographical data processing, mapping, and spatial analysis. Scalable architecture with TypeScript, Docker, MySQL, and Node.js for location-based management.
 
-💬 **Ruggine**: Modern chat application built with Rust featuring native GUI interface (Iced), WebSocket for real-time messaging, and Redis for session management. Supports group chats, private messaging, and friend requests (developed with Luigi Gonnella).
+💬 **Ruggine** (2024)
+Modern chat application built with Rust featuring native GUI (Iced framework), WebSocket for real-time messaging, and Redis for session management. Supports group chats, private messaging, group invitations, and friend requests (developed with Luigi Gonnella).
 
-🎮 **Misfortune Tracker**: Gaming statistics application with real-time data visualization, user analytics, and interactive gameplay tracking. Built with JavaScript, React, Node.js, and Express.
+🎮 **Misfortune Game** (2023)
+Gaming statistics application with real-time data visualization, user analytics, and interactive gameplay tracking. Features both demo and authenticated versions. Built with JavaScript, React, Node.js, Express, and Vite.
 
-👾 **Pacman**: Retro Pacman clone for Landtiger LPC1768 board programmed in ARM assembly, featuring classic gameplay, AI-driven ghosts, and authentic retro graphics.
+👾 **Pacman** (2023)
+Classic Pacman arcade game for Landtiger LPC1768 board programmed in ARM assembly. Features authentic retro graphics, classic gameplay mechanics, and AI-driven ghost behavior.
 
-🍳 **RecApp**: Recipe sharing forum under active development. Built with React Router, Prisma, PostgreSQL, Redis, Supabase, and Vercel. Community features and UI enhancements coming soon.
+🍳 **RecApp** (2024)
+Recipe sharing forum under active development. Built with React Router, Prisma, PostgreSQL, Redis, Supabase, and Vercel. Community features and enhanced UI coming soon.
 
-Each project showcases my expertise in modern technologies, from AI/ML to full-stack development and low-level programming!`,
+Each project demonstrates expertise across AI/ML, full-stack development, system architecture, and low-level programming!`,
     keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
-    quickReplies: ['View Projects', 'Skills', 'Publications', 'Contact']
+    quickReplies: ['View Projects', 'Skills', 'Research Papers', 'Contact']
   },
   {
     id: 'volunteer',
@@ -206,26 +215,37 @@ I'm flexible and adaptable to different working arrangements!`,
 
 I stay updated with the latest trends in web development, AI technologies, and always eager to learn new tools that can improve project outcomes and user accessibility!`,
     keywords: ['technologies', 'tech', 'tools', 'framework', 'library', 'database', 'ai', 'machine learning', 'pytorch', 'tensorflow', 'xgboost', 'langgraph', 'llm', 'gan', 'prisma', 'rust'],
-    quickReplies: ['View Projects', 'Skills', 'AI Experience', 'Publications']
+    quickReplies: ['View Projects', 'Skills', 'AI Experience', 'Research Papers']
   },
   {
-    id: 'publications',
-    question: 'What research or publications have you worked on?',
-    answer: `I've worked on research projects that have resulted in academic publications:
+    id: 'research-papers',
+    question: 'What research papers have you worked on?',
+    answer: `I've worked on academic research projects in AI/ML and software engineering:
 
 📄 **GANs for Data Augmentation in Imbalanced Medical Image Classification** (2025)
 Authors: Dorotea Monaco, Luigi Gonnella
-This research explores using Generative Adversarial Networks (DCGANs and cDCGANs) for medical image data augmentation and domain adaptation. We achieved clinical-quality results for addressing class imbalance in medical imaging datasets.
-Tags: Machine Learning, Medical Imaging, GANs, Deep Learning
+Venue: Politecnico di Torino - Machine Learning for Visual and Multimedia Project
+
+Systematic investigation of Generative Adversarial Networks (DCGANs and cDCGANs) for synthetic data augmentation in imbalanced medical image classification. The project evaluates multiple loss functions (Hinge, Wasserstein, BCE, MSE) to address malignant skin lesion detection in ISIC dataset. Includes hyperparameter optimization, domain adaptation analysis with DANN, and comprehensive evaluation across ResNet-50, ResNet-18, and AlexNet with both pre-trained and from-scratch training paradigms.
+
+Tags: Machine Learning, Medical Imaging, GANs, Deep Learning, PyTorch, Domain Adaptation
 
 📄 **Architectures for Code Development with LLMs** (2025)
 Author: Dorotea Monaco
-This work investigates multi-agent architectures using Large Language Models for automated code generation and quality assurance. Implemented advanced orchestration systems with LangGraph and Ollama.
-Tags: Large Language Models, Software Engineering, Multi-Agent Systems, Code Generation
+Venue: Politecnico di Torino - Large Language Models for Software Engineering Project
 
-Both publications demonstrate my research capabilities in AI, machine learning, and software engineering, combining theoretical knowledge with practical implementation.`,
-    keywords: ['publications', 'research', 'paper', 'academic', 'gan', 'llm', 'medical imaging', 'code generation', 'writing', 'publish'],
-    quickReplies: ['View Publications', 'Projects', 'AI Experience', 'Contact']
+Comparative study of three architectural approaches for automated code generation using Large Language Models:
+• Naive Baseline (one-shot generation)
+• Single-Agent Pipeline (multi-step reasoning orchestrated with LangGraph)
+• Multi-Agent System (collaborative system with specialized roles: Planner, Coder, and Critic)
+
+The project implements workflow orchestration, code execution sandbox, quality metrics evaluation, and provides comprehensive performance analysis across different programming tasks using Ollama, Qwen, and DeepSeek.
+
+Tags: Large Language Models, Software Engineering, Multi-Agent Systems, Code Generation, LangGraph, AI
+
+Both projects demonstrate my research capabilities in AI/ML and software engineering, combining theoretical knowledge with practical implementation and rigorous evaluation.`,
+    keywords: ['research', 'paper', 'papers', 'academic', 'gan', 'llm', 'medical imaging', 'code generation', 'writing'],
+    quickReplies: ['View Research Papers', 'Projects', 'AI Experience', 'Contact']
   },
   {
     id: 'education',
