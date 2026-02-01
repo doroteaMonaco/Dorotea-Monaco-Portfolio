@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 15 13% 7%;          /* Dark elegant background */
-    --foreground: 210 40% 96%;        /* Soft white text */
+    --background: 222 47% 4%;         /* Deep professional background */
+    --foreground: 210 40% 98%;        /* Crisp white text */
 
-    --card: 20 16% 9%;               /* Slightly lighter card background */
-    --card-foreground: 210 40% 96%;  
+    --card: 222 35% 7%;               /* Subtle card elevation */
+    --card-foreground: 210 40% 98%;  
 
-    --popover: 20 16% 9%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 222 35% 7%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;          /* Modern blue for dark theme */
+    --primary: 221 83% 53%;           /* Refined blue - professional */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 20 16% 12%;         /* Dark secondary */
+    --secondary: 222 30% 11%;         /* Elevated secondary */
     --secondary-foreground: 210 40% 96%;
 
-    --muted: 20 16% 12%;
-    --muted-foreground: 215 16% 65%;
+    --muted: 222 30% 11%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 31 100% 71%;           /* Golden accent */
-    --accent-foreground: 20 16% 9%;
+    --accent: 47 96% 53%;             /* Warm accent */
+    --accent-foreground: 222 47% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 27 16% 18%;            /* Subtle border */
-    --input: 27 16% 18%;
-    --ring: 217 91% 60%;             /* Blue focus ring */
+    --border: 222 20% 15%;            /* Refined border */
+    --input: 222 20% 15%;
+    --ring: 221 83% 53%;              /* Professional focus ring */
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 20 16% 9%;
     --sidebar-foreground: 210 40% 96%;
@@ -45,21 +45,22 @@
     --sidebar-border: 27 16% 18%;
     --sidebar-ring: 217 91% 60%;
 
-    /* Professional Brand Colors - Beautiful Blue Gradient */
-    --brand: 217 91% 60%;            /* Primary modern blue */
-    --brand-secondary: 250 84% 70%;  /* Light purple-blue */
-    --brand-tertiary: 200 98% 65%;   /* Bright cyan-blue */
+    /* Professional Brand Colors - Refined Palette */
+    --brand: 221 83% 53%;            /* Primary professional blue */
+    --brand-secondary: 262 83% 58%;  /* Elegant purple */
+    --brand-tertiary: 193 82% 55%;   /* Refined cyan */
     --brand-foreground: 0 0% 100%;
 
-    /* Enhanced Motion & Effects */
-    --transition-smooth: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-bounce: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Professional Motion - Smooth & Refined */
+    --transition-smooth: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-bounce: all 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-elegant: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
     
-    /* Professional Shadows with blue tint */
-    --shadow-glow: 0 0 50px hsl(var(--brand) / 0.5);
-    --shadow-elegant: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
-    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
-    --shadow-floating: 0 20px 40px hsl(0 0% 0% / 0.4);
+    /* Refined Shadows - Professional Depth */
+    --shadow-glow: 0 0 40px hsl(var(--brand) / 0.25);
+    --shadow-elegant: 0 20px 50px -12px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.2);
+    --shadow-floating: 0 12px 40px hsl(0 0% 0% / 0.25);
 
     /* Gradient definitions - Beautiful Blue Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-secondary)) 50%, hsl(var(--brand-tertiary)) 100%);
@@ -68,33 +69,33 @@
   }
 
   .light {
-    --background: 0 0% 99%;           /* Ultra light clean background */
-    --foreground: 0 0% 8%;            /* Very dark text for high contrast */
+    --background: 0 0% 100%;          /* Pure white background */
+    --foreground: 222 47% 11%;        /* Rich dark text */
 
-    --card: 0 0% 100%;                /* Pure white cards */
-    --card-foreground: 0 0% 8%;
+    --card: 0 0% 100%;                /* White cards */
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 217 91% 50%;           /* Professional modern blue */
+    --primary: 221 83% 53%;           /* Professional blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 96%;         /* Very light secondary */
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 220 14% 96%;         /* Subtle secondary */
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 20% 96%;             /* Light muted areas */
-    --muted-foreground: 215 16% 40%;  /* Medium gray text */
+    --muted: 220 14% 96%;             /* Light muted */
+    --muted-foreground: 220 9% 46%;   /* Balanced gray text */
 
-    --accent: 31 85% 60%;             /* Bright golden accent */
+    --accent: 47 96% 53%;             /* Warm accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 92%;            /* Very light borders */
-    --input: 214 32% 94%;             /* Light input backgrounds */
-    --ring: 217 91% 50%;              /* Blue focus ring */
+    --border: 220 13% 91%;            /* Refined borders */
+    --input: 220 13% 91%;             /* Subtle inputs */
+    --ring: 221 83% 53%;              /* Professional focus */
 
     --sidebar-background: 0 0% 99%;
     --sidebar-foreground: 0 0% 8%;
@@ -105,16 +106,16 @@
     --sidebar-border: 214 32% 92%;
     --sidebar-ring: 217 91% 50%;
 
-    --brand: 217 91% 50%;             /* Primary modern blue */
-    --brand-secondary: 250 84% 65%;   /* Light purple-blue */
-    --brand-tertiary: 200 98% 60%;    /* Bright cyan-blue */
+    --brand: 221 83% 53%;             /* Professional blue */
+    --brand-secondary: 262 83% 58%;   /* Elegant purple */
+    --brand-tertiary: 193 82% 55%;    /* Refined cyan */
     --brand-foreground: 0 0% 100%;
 
-    /* Light theme shadows - much softer */
-    --shadow-glow: 0 0 40px hsl(var(--brand) / 0.15);
-    --shadow-elegant: 0 15px 35px hsl(0 0% 0% / 0.06);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.04);
-    --shadow-floating: 0 10px 25px hsl(0 0% 0% / 0.08);
+    /* Light theme shadows - professional depth */
+    --shadow-glow: 0 0 30px hsl(var(--brand) / 0.12);
+    --shadow-elegant: 0 8px 30px hsl(220 13% 0% / 0.08);
+    --shadow-card: 0 2px 12px hsl(220 13% 0% / 0.05);
+    --shadow-floating: 0 8px 24px hsl(220 13% 0% / 0.1);
   }
 
 }
@@ -126,6 +127,23 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  a {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm;
   }
 }
 
@@ -168,34 +186,34 @@
   
   .glass-card {
     background: linear-gradient(145deg, 
-      hsl(var(--card) / 0.8) 0%, 
-      hsl(var(--card) / 0.4) 100%);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid hsl(var(--border) / 0.5);
-    box-shadow: var(--shadow-card);
+      hsl(var(--card) / 0.85) 0%, 
+      hsl(var(--card) / 0.65) 100%);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid hsl(var(--border) / 0.6);
+    box-shadow: var(--shadow-card), inset 0 1px 0 hsl(var(--foreground) / 0.03);
   }
   
   .glass-floating {
     background: linear-gradient(145deg, 
-      hsl(var(--card) / 0.9) 0%, 
-      hsl(var(--card) / 0.6) 100%);
-    backdrop-filter: blur(25px) saturate(200%);
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
-    border: 1px solid hsl(var(--border) / 0.8);
-    box-shadow: var(--shadow-floating);
+      hsl(var(--card) / 0.95) 0%, 
+      hsl(var(--card) / 0.75) 100%);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid hsl(var(--border) / 0.7);
+    box-shadow: var(--shadow-floating), inset 0 1px 0 hsl(var(--foreground) / 0.05);
   }
   
-  /* Enhanced glass effects for light theme */
+  /* Professional glass effects for light theme */
   .light .glass-card {
     background: linear-gradient(145deg, 
-      hsl(var(--card) / 0.95) 0%, 
-      hsl(var(--card) / 0.85) 100%);
-    backdrop-filter: blur(10px) saturate(120%);
-    -webkit-backdrop-filter: blur(10px) saturate(120%);
-    border: 1px solid hsl(var(--border) / 0.3);
+      hsl(var(--card) / 0.98) 0%, 
+      hsl(var(--card) / 0.92) 100%);
+    backdrop-filter: blur(12px) saturate(110%);
+    -webkit-backdrop-filter: blur(12px) saturate(110%);
+    border: 1px solid hsl(var(--border) / 0.5);
     box-shadow: var(--shadow-card), 
-                0 0 0 1px hsl(var(--border) / 0.05);
+                inset 0 1px 0 hsl(0 0% 100% / 0.8);
   }
   
   .light .glass-floating {
@@ -253,20 +271,20 @@
   }
   
   .hover-glow {
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
   }
   
   .hover-glow:hover {
-    box-shadow: var(--shadow-glow);
-    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-glow), var(--shadow-card);
+    transform: translateY(-2px);
   }
   
   .magnetic-hover {
-    transition: var(--transition-bounce);
+    transition: var(--transition-elegant);
   }
   
   .magnetic-hover:hover {
-    transform: translateY(-8px) rotateX(5deg);
+    transform: translateY(-4px) scale(1.01);
   }
 }
 
@@ -333,4 +351,78 @@
     50% { opacity: 1; }
     100% { opacity: 0.3; }
   }
-}
+
+  /* Professional Button Styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg;
+    @apply bg-gradient-primary text-white font-medium;
+    @apply shadow-md hover:shadow-lg;
+    @apply transition-all duration-300;
+    @apply hover:scale-105 active:scale-95;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg;
+    @apply bg-secondary text-secondary-foreground font-medium;
+    @apply border border-border;
+    @apply hover:bg-accent hover:text-accent-foreground;
+    @apply transition-all duration-300;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg;
+    @apply text-muted-foreground font-medium;
+    @apply hover:bg-accent/10 hover:text-foreground;
+    @apply transition-all duration-200;
+  }
+
+  /* Professional Card Styles */
+  .card-pro {
+    @apply rounded-2xl glass-floating p-6;
+    @apply transition-all duration-300;
+    @apply hover:shadow-elegant hover:-translate-y-1;
+  }
+
+  .card-interactive {
+    @apply card-pro cursor-pointer;
+    @apply hover:border-brand/50;
+  }
+
+  /* Professional Section Spacing */
+  .section-container {
+    @apply py-16 md:py-24 lg:py-32;
+    @apply relative overflow-hidden;
+  }
+
+  .section-header {
+    @apply text-center mb-12 md:mb-16;
+  }
+
+  /* Enhanced Text Styles */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Professional Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand via-brand-secondary to-brand-tertiary;
+  }
+
+  /* Professional Backdrop Effects */
+  .backdrop-pro {
+    @apply backdrop-blur-xl backdrop-saturate-150;
+  }
+
+  /* Professional Focus States */
+  .focus-pro {
+    @apply focus-visible:outline-none;
+    @apply focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2;
+    @apply focus-visible:ring-offset-background;
+  }}

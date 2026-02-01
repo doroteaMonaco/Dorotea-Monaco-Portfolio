@@ -16,38 +16,38 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-mesh opacity-20"></div>
-      <div className="floating-orb w-96 h-96 top-20 -left-20 opacity-60"></div>
-      <div className="floating-orb w-64 h-64 bottom-20 -right-20 opacity-40" style={{ animationDelay: '3s' }}></div>
+      {/* Background Effects - Subtle */}
+      <div className="absolute inset-0 bg-gradient-mesh opacity-10"></div>
+      <div className="floating-orb w-[32rem] h-[32rem] top-20 -left-32 opacity-40"></div>
+      <div className="floating-orb w-96 h-96 bottom-20 -right-32 opacity-30" style={{ animationDelay: '3s' }}></div>
       
       <div
-        className="absolute inset-0 spotlight pointer-events-none"
+        className="absolute inset-0 spotlight pointer-events-none opacity-50"
         style={{ ["--spot-x" as any]: pos.x, ["--spot-y" as any]: pos.y } as CSSProperties}
       />
       
       <div className="container mx-auto px-4 py-20 relative z-10" onMouseMove={handleMove}>
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <div className="animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-floating mb-6">
-              <div className="w-2 h-2 rounded-full bg-brand animate-pulse-glow"></div>
-              <span className="text-sm font-medium text-glow">Available for Hiring</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-floating mb-8 shadow-sm">
+              <div className="w-2 h-2 rounded-full bg-brand animate-pulse-glow shadow-lg shadow-brand/50"></div>
+              <span className="text-sm font-medium">Available for Hiring</span>
             </div>
             
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight mb-6">
-              <span className="block">Dorotea Monaco</span>
-              <span className="text-gradient block text-2xl sm:text-3xl md:text-4xl">{t('hero.role')}</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6 tracking-tight">
+              <span className="block font-display">Dorotea Monaco</span>
+              <span className="gradient-text block text-3xl sm:text-4xl md:text-5xl mt-2">{t('hero.role')}</span>
             </h1>
             
-            <p className="text-xl md:text-2xl font-medium text-foreground mb-4 opacity-90">
+            <p className="text-lg md:text-xl font-medium text-foreground/80 mb-3 tracking-tight">
               Politecnico di Torino • {t('hero.currentVolunteer')}
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
               {t('hero.description')}
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
               <a href="#projects" className="w-full sm:w-auto">
                 <Button variant="gradient" size="lg" className="w-full group">
                   <span>{t('hero.viewProjects')}</span>
