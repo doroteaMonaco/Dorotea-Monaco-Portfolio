@@ -11,7 +11,7 @@ export const Resources = () => {
       icon: <FileText className="w-6 h-6" />,
       items: [
         {
-          title: t('resources.resume'),
+          title: t('resources.resume') + " (English)",
           description: t('resources.resumeDesc'),
           format: "PDF",
           size: "150 KB",
@@ -19,13 +19,13 @@ export const Resources = () => {
           available: true
         },
         {
-          title: t('resources.academicCV'),
-          description: t('resources.academicCVDesc'),
+          title: t('resources.resume') + " (Italian)",
+          description: t('resources.resumeDesc'),
           format: "PDF",
-          size: "200 KB",
-          link: "/Academic.pdf",
+          size: "150 KB",
+          link: "/DOROTEA MONACO CV ITA.pdf",
           available: true
-        }
+        },
       ]
     },
     {
@@ -80,30 +80,6 @@ export const Resources = () => {
         }
       ]
     },
-    {
-      category: t('resources.category.presentations'),
-      icon: <FileText className="w-6 h-6" />,
-      items: [
-        {
-          title: t('resources.aiPresentation'),
-          description: t('resources.aiPresentationDesc'),
-          format: "PDF",
-          size: "5 MB",
-          link: "#",
-          available: false,
-          comingSoon: true
-        },
-        {
-          title: t('resources.llmPresentation'),
-          description: t('resources.llmPresentationDesc'),
-          format: "PDF",
-          size: "4 MB",
-          link: "#",
-          available: false,
-          comingSoon: true
-        }
-      ]
-    }
   ];
 
   const getFormatBadge = (format: string) => {
