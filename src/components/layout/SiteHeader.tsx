@@ -89,12 +89,12 @@ export const SiteHeader = () => {
               </a>
             </div>
             
-            <Link to="/#contact">
+            <a href="/#contact">
               <Button variant="gradient" size="sm" className="ml-2">
                 <span className="hidden lg:inline">💼 {t('nav.hire')}</span>
                 <span className="lg:hidden">{t('nav.hire')}</span>
               </Button>
-            </Link>
+            </a>
           </div>
 
           <button
@@ -149,7 +149,7 @@ export const SiteHeader = () => {
                 </a>
               </div>
               
-              <a href="#contact" onClick={() => setOpen(false)}>
+              <a href="/#contact" onClick={() => setOpen(false)}>
                 <Button className="w-full" variant="gradient">💼 {t('nav.hire')}</Button>
               </a>
             </nav>
