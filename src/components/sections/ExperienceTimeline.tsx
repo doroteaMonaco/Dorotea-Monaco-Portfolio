@@ -17,7 +17,7 @@ export const ExperienceTimeline = () => {
 
   const timelineData: TimelineItem[] = [
     {
-      year: "2024 - Present",
+      year: "2025 - Present",
       title: t('experience.masters.title'),
       organization: t('experience.masters.organization'),
       description: t('experience.masters.description'),
@@ -43,7 +43,7 @@ export const ExperienceTimeline = () => {
       tags: [t('experience.tags.fullStack'), t('experience.tags.aiml'), t('experience.tags.systems')]
     },
     {
-      year: "2020 - 2024",
+      year: "2020 - 2025",
       title: t('experience.bachelors.title'),
       organization: t('experience.bachelors.organization'),
       description: t('experience.bachelors.description'),
