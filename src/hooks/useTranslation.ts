@@ -14,7 +14,7 @@ const translations = {
     'nav.hire': 'Assumimi',
     
     // Hero Section
-    'hero.role': 'Software Engineering • Artificial Intelligence • Computer Vision',
+    'hero.role': 'Software Engineering • AI • Machine Learning',
     'hero.currentVolunteer': 'Volontaria AISM',
     'hero.description': 'Il mio obiettivo è costruire soluzioni che vadano oltre le prestazioni, creando tecnologie che fanno davvero la differenza nella vita quotidiana delle persone. Sono particolarmente motivata a sviluppare strumenti e applicazioni che migliorano l\'accessibilità e supportano le persone con disabilità, aiutandole a superare le sfide e a raggiungere l’indipendenza.',
     'hero.viewProjects': 'Vedi Progetti',
@@ -332,7 +332,7 @@ const translations = {
     'nav.hire': 'Hire Me',
     
     // Hero Section
-    'hero.role': 'Software Engineering • Artificial Intelligence • Computer Vision',
+    'hero.role': 'Software Engineering • AI • Machine Learning',
     'hero.currentVolunteer': 'AISM Volunteer',
     'hero.description': 'My goal is to build solutions that go beyond performance, creating technologies that truly make a difference in people\'s daily lives. I am especially motivated to develop tools and applications that improve accessibility and support individuals with disabilities, helping them overcome challenges and gain independence.',
     'hero.viewProjects': 'View Projects',

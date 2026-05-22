@@ -43,7 +43,7 @@ export const ExperienceTimeline = () => {
       tags: [t('experience.tags.fullStack'), t('experience.tags.aiml'), t('experience.tags.systems')]
     },
     {
-      year: "2021 - 2024",
+      year: "2020 - 2024",
       title: t('experience.bachelors.title'),
       organization: t('experience.bachelors.organization'),
       description: t('experience.bachelors.description'),
