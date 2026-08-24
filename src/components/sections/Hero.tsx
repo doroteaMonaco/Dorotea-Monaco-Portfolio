@@ -40,8 +40,12 @@ export const Hero = () => {
               <span className="gradient-text block text-3xl sm:text-4xl md:text-5xl mt-2">{t('hero.role')}</span>
             </h1>
             
-            <p className="text-lg md:text-xl font-medium text-foreground/80 mb-3 tracking-tight">
+            <p className="text-lg md:text-xl font-medium text-foreground/80 mb-2 tracking-tight">
               Politecnico di Torino • {t('hero.currentVolunteer')}
+            </p>
+
+            <p className="text-sm md:text-base font-medium text-brand mb-4 tracking-tight">
+              {t('hero.visitingResearcher')}
             </p>
             
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">

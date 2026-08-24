@@ -1,13 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { useLanguageContext } from "@/contexts/TranslationContext";
-import { GraduationCap, Briefcase, Heart, Award } from "lucide-react";
+import { GraduationCap, Briefcase, Heart } from "lucide-react";
 
 interface TimelineItem {
-  year: string;
+  year?: string;
   title: string;
   organization: string;
   description: string;
-  type: 'education' | 'work' | 'volunteer' | 'achievement';
+  type: 'education' | 'work' | 'volunteer';
   tags?: string[];
   ongoing?: boolean;
 }
@@ -17,7 +17,22 @@ export const ExperienceTimeline = () => {
 
   const timelineData: TimelineItem[] = [
     {
-      year: "2025 - Present",
+      year: t('experience.berkeley.period'),
+      title: t('experience.berkeley.title'),
+      organization: t('experience.berkeley.organization'),
+      description: t('experience.berkeley.description'),
+      type: "work",
+      tags: [t('experience.tags.aiml'), t('experience.tags.research'), t('experience.tags.structuralEngineering')]
+    },
+    {
+      year: t('experience.opensignal.period'),
+      title: t('experience.opensignal.title'),
+      organization: t('experience.opensignal.organization'),
+      description: t('experience.opensignal.description'),
+      type: "work",
+      tags: [t('experience.tags.softwareEngineering'), t('experience.tags.research'), t('experience.tags.seismicAnalysis')]
+    },
+    {
       title: t('experience.masters.title'),
       organization: t('experience.masters.organization'),
       description: t('experience.masters.description'),
@@ -35,15 +50,6 @@ export const ExperienceTimeline = () => {
       ongoing: true
     },
     {
-      year: "2024",
-      title: t('experience.portfolio.title'),
-      organization: t('experience.portfolio.organization'),
-      description: t('experience.portfolio.description'),
-      type: "achievement",
-      tags: [t('experience.tags.fullStack'), t('experience.tags.aiml'), t('experience.tags.systems')]
-    },
-    {
-      year: "2020 - 2025",
       title: t('experience.bachelors.title'),
       organization: t('experience.bachelors.organization'),
       description: t('experience.bachelors.description'),
@@ -60,8 +66,6 @@ export const ExperienceTimeline = () => {
         return <Briefcase className="w-5 h-5" />;
       case 'volunteer':
         return <Heart className="w-5 h-5" />;
-      case 'achievement':
-        return <Award className="w-5 h-5" />;
     }
   };
 
@@ -73,8 +77,6 @@ export const ExperienceTimeline = () => {
         return 'from-green-500 to-green-600';
       case 'volunteer':
         return 'from-pink-500 to-pink-600';
-      case 'achievement':
-        return 'from-yellow-500 to-yellow-600';
     }
   };
 
@@ -118,7 +120,9 @@ export const ExperienceTimeline = () => {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <span className="text-sm font-semibold text-brand">{item.year}</span>
+                        {item.year && (
+                          <span className="text-sm font-semibold text-brand">{item.year}</span>
+                        )}
                         {item.ongoing && (
                           <Badge variant="outline" className="text-xs bg-brand/10 text-brand border-brand/30">
                             {t('experience.ongoing')}
