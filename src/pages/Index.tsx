@@ -25,11 +25,11 @@ const Index = () => {
         </a>
         
         <SEO
-          title="Dorotea Monaco — Software Engineer Portfolio"
-          description="Portfolio di Dorotea Monaco, ingegnere software: progetti innovativi, competenze tecniche e informazioni di contatto."
+          title="Dorotea Monaco — Portfolio"
+          description="Portfolio di Dorotea Monaco: progetti AI/ML, ricerca, esperienze, competenze e informazioni di contatto."
           person={{
             name: "Dorotea Monaco",
-            jobTitle: "Software Engineer",
+            jobTitle: "Computer Engineering Master's Student",
             email: "dorotea.monaco@gmail.com",
             sameAs: [
               "https://github.com/doroteaMonaco",
