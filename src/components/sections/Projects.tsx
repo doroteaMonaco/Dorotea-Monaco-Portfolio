@@ -7,6 +7,7 @@ import ruggine from "@/assets/projects/ruggine.png";
 import llm from "@/assets/projects/llm.png";
 import ml from "@/assets/projects/ml.png";
 import participium from "@/assets/projects/participium.png";
+import opensignal from "@/assets/projects/opensignal.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 // Placeholder image for Machine Learning Projects - replace with actual screenshot when available
 // Placeholder image for LLM Architectures - replace with actual screenshot when available
@@ -19,6 +20,25 @@ export const Projects = () => {
   const { t } = useLanguageContext();
 
   const projects = [
+    {
+      title: t('projects.opensignal.title'),
+      description: t('projects.opensignal.description'),
+      metrics: "🌍 Integrated seismic workflows • 📊 Engineering analysis • 💻 Cross-platform desktop app",
+      image: opensignal,
+      tech: ["Python", "PySide6", "QML", "NumPy", "SciPy", "SQLite", "Seismic Analysis"],
+      link: "https://luigigonnella.github.io/OpenSignalWebsite/",
+      isFeatured: true,
+      contributors: [
+        {
+          name: "Luigi Gonnella",
+          github: "https://github.com/LuigiGonnella"
+        },
+        {
+          name: "Jean Piers Chavez",
+          github: "https://github.com/JeanPiersChavez"
+        }
+      ]
+    },
     {
       title: t('projects.gan.title'),
       description: t('projects.gan.description'),
@@ -217,8 +237,8 @@ export const Projects = () => {
                             onClick={(e) => e.stopPropagation()}
                           >
                             <img
-                              src="https://github.com/LuigiGonnella.png"
-                              alt="Luigi Gonnella GitHub avatar"
+                              src={`${contributor.github}.png`}
+                              alt={`${contributor.name} GitHub avatar`}
                               className="w-5 h-5 rounded-full border border-muted mr-1"
                               style={{ display: 'inline-block', verticalAlign: 'middle' }}
                             />

@@ -37,9 +37,9 @@ const faqs: FAQ[] = [
   {
     id: 'about',
     question: 'Tell me about yourself',
-    answer: `Hi! I'm Dorotea Monaco, a Master's student in Software Engineering at Politecnico di Torino. I'm passionate about building solutions that go beyond performance, creating technologies that truly make a difference in people's daily lives. 
+    answer: `Hi! I'm Dorotea Monaco, a Master's student in Computer Engineering at Politecnico di Torino, with a focus on artificial intelligence, machine learning, and software engineering.
 
-I specialize in full-stack development with modern technologies like React, TypeScript, Node.js, and I'm particularly motivated to develop tools and applications that improve accessibility and support individuals with disabilities.
+I enjoy combining research, experimentation, and software design to turn complex problems into clear, reliable, and useful tools. My recent work includes generative models for medical imaging, LLM-based agent workflows, and scientific software for earthquake engineering.
 
 🤝 I'm also an active volunteer with AISM (Associazione Italiana Sclerosi Multipla), which has shaped my approach to technology design, teaching me the importance of empathy and inclusivity in creating human-centered solutions.`,
     keywords: ['about', 'who', 'yourself', 'dorotea', 'background', 'introduction', 'aism', 'volunteer'],
@@ -68,6 +68,12 @@ I'm always eager to learn new technologies and stay updated with industry trends
     question: 'What projects have you worked on?',
     answer: `Here are some of my key projects:
 
+🌍 **OpenSignal** (2026)
+Desktop application developed at DISEG, Politecnico di Torino, in collaboration with Luigi Gonnella and Jean Piers Chavez. It provides an integrated workflow for seismic ground-motion analysis and selection, including target spectra, record databases, spectral scaling, signal processing, spectrum matching, accelerogram generation, and site-response analysis.
+
+🔬 **Virtual Staining of Histopathology Images** (2026)
+Developed and evaluated deep-learning approaches for virtual H&E-to-IHC staining, comparing GAN-based, deterministic, and latent diffusion architectures with pathology foundation models and dedicated perceptual, structural, and morphological evaluation pipelines.
+
 🧠 **GAN for Data Augmentation and Domain Adaptation** (2025)
 Research-grade medical imaging project using DCGANs and cDCGANs for data augmentation and domain adaptation in imbalanced medical image classification. Implemented with PyTorch, including comprehensive evaluation across ResNet-50, ResNet-18, and AlexNet architectures. Achieved clinical-quality results for melanoma detection in ISIC dataset (developed with Luigi Gonnella).
 
@@ -95,8 +101,8 @@ Classic Pacman arcade game for Landtiger LPC1768 board programmed in ARM assembl
 🍳 **RecApp** (2024)
 Recipe sharing forum under active development. Built with React Router, Prisma, PostgreSQL, Redis, Supabase, and Vercel. Community features and enhanced UI coming soon.
 
-Each project demonstrates expertise across AI/ML, full-stack development, system architecture, and low-level programming!`,
-    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
+Together, these projects reflect my experience in AI/ML, software engineering, research workflows, and low-level programming.`,
+    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'opensignal', 'seismic', 'earthquake', 'diseg', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
     quickReplies: ['View Projects', 'Skills', 'Research Papers', 'Contact']
   },
   {
@@ -140,22 +146,24 @@ This human-centered approach drives every project I work on, ensuring that solut
   {
     id: 'experience',
     question: 'What is your work experience?',
-    answer: `I'm currently a Master's student in Software Engineering at Politecnico di Torino, where I'm building advanced expertise in software architecture, AI technologies, and system design. 
+    answer: `I'm currently completing a Master's degree in Computer Engineering at Politecnico di Torino, focusing on software engineering, machine learning, artificial intelligence, computer vision, and distributed systems.
+
+💼 **Software Development Experience**:
+From March to July 2026, I contributed to OpenSignal at DISEG – Politecnico di Torino. I worked on the migration of a seismic ground-motion analysis application from MATLAB to a modular Python architecture, developing scientific modules and its PySide6/QML interface.
+
+🔬 **Research Experience**:
+From September 2026, I will be a Visiting Student Researcher at UC Berkeley's Department of Civil and Environmental Engineering, working on my Master's thesis at the intersection of software engineering, machine learning, and structural engineering.
 
 🎓 **Academic Experience**:
 - Advanced software engineering principles
-- Database design and optimization
-- Cloud deployment and DevOps practices
-- AI and machine learning applications
-- Accessibility-focused design
+- Artificial intelligence and machine learning
+- Computer vision and generative models
+- Distributed systems and software architectures
 
 🤝 **Volunteer Experience**: 
 Active volunteer with AISM (Associazione Italiana Sclerosi Multipla), developing leadership, communication, and project management skills while contributing to meaningful social impact.
 
-💻 **Technical Experience**:
-Through my studies and personal projects, I've gained hands-on experience in full-stack development, modern web technologies, and human-centered design.
-
-I'm actively seeking opportunities to apply my skills in innovative, impactful environments!`,
+These experiences have helped me combine technical development, applied research, and collaboration across different fields.`,
     keywords: ['experience', 'work', 'job', 'internship', 'career', 'university', 'education', 'master', 'volunteer'],
     quickReplies: ['Contact', 'Skills', 'Volunteer Work']
   },
@@ -176,14 +184,9 @@ I typically respond within 24 hours. Looking forward to connecting!`,
   {
     id: 'availability',
     question: 'Are you available for work?',
-    answer: `Yes, I'm actively looking for opportunities! I'm available for:
+    answer: `I'm open to discussing future opportunities and research collaborations that align with my studies and experience.
 
-🎯 **Internships**: Summer 2025 and beyond
-💼 **Part-time roles**: While completing my studies
-🚀 **Freelance projects**: Web development and consulting
-🤝 **Collaborations**: Open source and personal projects
-
-I'm particularly interested in roles involving modern web technologies, full-stack development, and innovative projects. Let's discuss how I can contribute to your team!`,
+I'm particularly interested in artificial intelligence, machine learning, research-oriented software engineering, and interdisciplinary projects with practical applications. Feel free to contact me to discuss a potential opportunity.`,
     keywords: ['available', 'hire', 'job', 'work', 'freelance', 'internship', 'opportunity'],
     quickReplies: ['Contact', 'CV Download', 'Skills']
   },
@@ -208,8 +211,8 @@ I'm flexible and adaptable to different working arrangements!`,
 🎨 **Frontend**: React, TypeScript, JavaScript, HTML5, Tailwind CSS, Vite
 ⚡ **Backend**: Node.js, Express, REST APIs, Python
 🗄️ **Databases**: MySQL, PostgreSQL, Supabase, Redis, Prisma
-🤖 **Data Science & AI**: PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, LangGraph, LLM, GANs, Machine Learning, Deep Learning
-🛠️ **Tools & DevOps**: Git, Docker, CI/CD, Testing, Jest, Vite
+🤖 **Data Science & AI**: PyTorch, TensorFlow, Pandas, NumPy, Scikit-learn, Hugging Face Transformers, spaCy, NLTK, LangGraph, LLMs, GANs, and diffusion models
+🛠️ **Tools & Software**: Git, Docker, CI/CD, PySide6/QML, Testing, Jest, Vite
 💻 **Programming Languages**: Python, JavaScript, TypeScript, C, Java, Rust, SQL, Assembly ARM
 ☁️ **Cloud & Deployment**: Vercel, Supabase, Docker
 
@@ -251,16 +254,15 @@ Both projects demonstrate my research capabilities in AI/ML and software enginee
     id: 'education',
     question: 'Tell me about your education',
     answer: `🎓 **Current Education**: 
-Master's in Software Engineering at Politecnico di Torino (ongoing)
+Master's in Computer Engineering at Politecnico di Torino (ongoing)
 
 📚 **Key Areas of Study**:
 • Advanced Software Engineering & Architecture
 • Artificial Intelligence and Machine Learning
 • Database Systems and Optimization
-• Full-Stack Web Development
-• Human-Computer Interaction
+• Computer Vision and Generative Models
+• Large Language Models
 • System Design and Programming
-• Cloud Computing and DevOps
 
 🤝 **Complementary Experience**:
 • Volunteer work with AISM developing leadership and communication skills

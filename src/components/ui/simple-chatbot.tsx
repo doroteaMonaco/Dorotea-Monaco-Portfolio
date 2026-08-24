@@ -18,7 +18,7 @@ const faqs = [
   {
     id: 'about',
     question: 'Tell me about yourself',
-    answer: `Hi! I'm Dorotea Monaco, a Master's student in Software Engineering at Politecnico di Torino. I specialize in full-stack development, AI/ML, and building accessible solutions using React, TypeScript, Node.js, Python, and modern databases.`,
+    answer: `Hi! I'm Dorotea Monaco, a Master's student in Computer Engineering at Politecnico di Torino. My interests include artificial intelligence, machine learning, software engineering, and the development of useful, accessible technologies.`,
     keywords: ['about', 'who', 'yourself', 'dorotea', 'background'],
     quickReplies: ['Skills', 'Projects', 'Publications']
   },

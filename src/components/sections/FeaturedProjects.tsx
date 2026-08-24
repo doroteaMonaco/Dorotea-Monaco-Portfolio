@@ -6,11 +6,20 @@ import gan from "@/assets/projects/gan.png";
 import participium from "@/assets/projects/participium.png";
 import llm from "@/assets/projects/llm.png";
 import ml from "@/assets/projects/ml.png";
+import opensignal from "@/assets/projects/opensignal.png";
 
 export const FeaturedProjects = () => {
   const { t } = useLanguageContext();
 
   const featuredProjects = [
+    {
+      title: t('projects.opensignal.title'),
+      description: t('projects.opensignal.description'),
+      metrics: "🌍 Integrated seismic workflows • 📊 Engineering analysis",
+      image: opensignal,
+      tech: ["Python", "PySide6", "QML", "NumPy", "SciPy", "SQLite"],
+      link: "https://luigigonnella.github.io/OpenSignalWebsite/",
+    },
     {
       title: t('projects.gan.title'),
       description: t('projects.gan.description'),
