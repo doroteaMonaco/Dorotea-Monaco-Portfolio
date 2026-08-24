@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Briefcase, Award, Download, Star, Calendar, Target, Code } from "lucide-react";
+import { ArrowRight, Briefcase, Code } from "lucide-react";
 import { useLanguageContext } from "@/contexts/TranslationContext";
 
 export const ExploreCards = () => {
@@ -14,46 +14,11 @@ export const ExploreCards = () => {
       gradient: "from-violet-500 to-purple-500"
     },
     {
-      title: t('explore.updates.title'),
-      description: t('explore.updates.description'),
-      icon: <Calendar className="w-6 h-6" />,
-      link: "/updates",
-      gradient: "from-blue-500 to-cyan-500"
-    },
-    {
       title: t('explore.experience.title'),
       description: t('explore.experience.description'),
       icon: <Briefcase className="w-6 h-6" />,
       link: "/experience",
       gradient: "from-purple-500 to-pink-500"
-    },
-    {
-      title: t('explore.certifications.title'),
-      description: t('explore.certifications.description'),
-      icon: <Award className="w-6 h-6" />,
-      link: "/certifications",
-      gradient: "from-green-500 to-emerald-500"
-    },
-    {
-      title: t('explore.featured.title'),
-      description: t('explore.featured.description'),
-      icon: <Star className="w-6 h-6" />,
-      link: "/featured",
-      gradient: "from-orange-500 to-red-500"
-    },
-    {
-      title: t('explore.resources.title'),
-      description: t('explore.resources.description'),
-      icon: <Download className="w-6 h-6" />,
-      link: "/resources",
-      gradient: "from-indigo-500 to-purple-500"
-    },
-    {
-      title: t('explore.opportunities.title'),
-      description: t('explore.opportunities.description'),
-      icon: <Target className="w-6 h-6" />,
-      link: "/opportunities",
-      gradient: "from-yellow-500 to-orange-500"
     }
   ];
 
@@ -71,7 +36,7 @@ export const ExploreCards = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {cards.map((card, index) => (
             <Link
               key={index}

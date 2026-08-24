@@ -11,21 +11,13 @@ export const Resources = () => {
       icon: <FileText className="w-6 h-6" />,
       items: [
         {
-          title: t('resources.resume') + " (English)",
+          title: t('resources.resume'),
           description: t('resources.resumeDesc'),
           format: "PDF",
-          size: "150 KB",
-          link: "/DOROTEA MONACO CV ENG.pdf",
+          size: "75 KB",
+          link: "/Dorotea-Monaco-CV.pdf",
           available: true
-        },
-        {
-          title: t('resources.resume') + " (Italian)",
-          description: t('resources.resumeDesc'),
-          format: "PDF",
-          size: "150 KB",
-          link: "/DOROTEA MONACO CV ITA.pdf",
-          available: true
-        },
+        }
       ]
     },
     {

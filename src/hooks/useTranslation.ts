@@ -23,9 +23,9 @@ const translations = {
     
     // About Section
     'about.title': 'Chi Sono',
-    'about.subtitle': 'Ingegnere del software con specializzazione in AI, computer vision e sviluppo full-stack, dedicata a creare soluzioni tecnologiche innovative e accessibili.',
+    'about.subtitle': 'Studentessa magistrale in Ingegneria Informatica, interessata all’intelligenza artificiale, al machine learning e allo sviluppo di tecnologie utili e accessibili.',
     'about.journey': 'Il Mio Percorso',
-    'about.content': '🎯 Competenze Tecniche Chiave\n\n• Sviluppo Full-Stack: Architetture production-ready con React, Node.js, TypeScript e PostgreSQL\n• AI/ML Engineering: GANs per augmentation di dati medici, sistemi multi-agente LLM, CNN per computer vision\n• Ingegneria del Software: Design pattern enterprise, sistemi distribuiti, containerizzazione Docker\n• Ricerca Applicata: Analisi in medical imaging, domain adaptation, ottimizzazione algoritmica\n\n🎓 Formazione Accademica\n\nMaster\'s Degree in Ingegneria del Software - Politecnico di Torino\nFocus: AI/ML, Architetture Software, Sistemi Distribuiti\nProgetti: GANs per classificazione di immagini mediche, sistemi multi-agente per code generation, piattaforme civic engagement\n\n💼 Esperienza di Progetto\n\nHo guidato e contribuito allo sviluppo di sistemi complessi che spaziano dalla ricerca in medical imaging (GAN per rilevamento melanoma con valutazione DANN) a piattaforme production-ready (Participium: sistema RBAC con gestione utenti enterprise). La mia esperienza include l\'implementazione di architetture multi-agente con LangGraph, pipeline ML con PyTorch, e applicazioni web scalabili.\n\n🤝 Impatto Sociale\n\nVolontaria attiva con AISM (Associazione Italiana Sclerosi Multipla), applico principi di design inclusivo e accessibilità in ogni progetto. Questa esperienza ha plasmato il mio approccio allo sviluppo software, integrando empatia e competenza tecnica per creare tecnologie che migliorano concretamente la vita delle persone.\n\n🚀 Obiettivi Professionali\n\nCerco opportunità in ambienti innovativi dove posso contribuire a progetti che uniscono eccellenza tecnica e impatto sociale. Particolarmente interessata a ruoli in AI/ML engineering, software architecture, e sviluppo di sistemi che affrontano sfide reali nel healthcare, accessibility, e civic tech.',
+    'about.content': 'Studio Ingegneria Informatica al Politecnico di Torino, dove sto approfondendo l’intelligenza artificiale, il machine learning e l’ingegneria del software. Mi interessa capire come questi ambiti possano dialogare per trasformare problemi complessi in strumenti chiari, affidabili e concretamente utili.\n\nNel mio percorso ho lavorato su progetti che spaziano dalla generazione e analisi di immagini mediche con modelli generativi allo sviluppo di workflow basati su agenti LLM. Queste esperienze mi hanno permesso di unire ricerca, sperimentazione e progettazione del software, prestando attenzione non solo ai risultati tecnici, ma anche alla qualità e all’usabilità delle soluzioni.\n\nIl volontariato con AISM ha rafforzato il mio interesse per tecnologie inclusive e accessibili. Affronto ogni progetto con curiosità, attenzione e desiderio di imparare, cercando opportunità in cui contribuire a soluzioni di AI e machine learning capaci di rispondere a esigenze reali.',
     
     
     // Skills Section
@@ -311,8 +311,6 @@ const translations = {
     'opportunities.letsConnect': 'Connettiamoci',
     
     // CV Dropdown
-    'cv.english': 'Scarica CV (Inglese)',
-    'cv.italian': 'Scarica CV (Italiano)',
     
     // Language
     'language.italian': 'Italiano',
@@ -341,9 +339,9 @@ const translations = {
     
     // About Section
     'about.title': 'About Me',
-    'about.subtitle': 'Software engineer specializing in AI, computer vision, and full-stack development, dedicated to building innovative and accessible technology solutions.',
+    'about.subtitle': 'Master’s student in Computer Engineering with an interest in artificial intelligence, machine learning, and useful, accessible technologies.',
     'about.journey': 'My Journey',
-    'about.content': '🎯 Core Technical Expertise\n\n• Full-Stack Development: Production-ready architectures with React, Node.js, TypeScript, and PostgreSQL\n• AI/ML Engineering: GANs for medical data augmentation, multi-agent LLM systems, CNN for computer vision\n• Software Engineering: Enterprise design patterns, distributed systems, Docker containerization\n• Applied Research: Medical imaging analysis, domain adaptation, algorithmic optimization\n\n🎓 Academic Background\n\nMaster\'s Degree in Software Engineering - Politecnico di Torino\nFocus: AI/ML, Software Architectures, Distributed Systems\nProjects: GANs for medical image classification, multi-agent systems for code generation, civic engagement platforms\n\n💼 Project Experience\n\nI have led and contributed to the development of complex systems ranging from medical imaging research (GANs for melanoma detection with DANN evaluation) to production-ready platforms (Participium: RBAC system with enterprise user management). My experience includes implementing multi-agent architectures with LangGraph, ML pipelines with PyTorch, and scalable web applications.\n\n🤝 Social Impact\n\nActive volunteer with AISM (Italian Multiple Sclerosis Association), I apply inclusive design and accessibility principles to every project. This experience has shaped my approach to software development, integrating empathy with technical expertise to create technologies that tangibly improve people\'s lives.\n\n🚀 Professional Goals\n\nSeeking opportunities in innovative environments where I can contribute to projects that unite technical excellence with social impact. Particularly interested in roles in AI/ML engineering, software architecture, and developing systems that address real challenges in healthcare, accessibility, and civic tech.',
+    'about.content': 'I study Computer Engineering at Politecnico di Torino, where I am exploring artificial intelligence, machine learning, and software engineering. I am interested in how these fields can work together to turn complex problems into clear, reliable, and genuinely useful tools.\n\nThroughout my studies, I have worked on projects ranging from medical image generation and analysis with generative models to the development of LLM-based agent workflows. These experiences have allowed me to combine research, experimentation, and software design while focusing not only on technical results, but also on the quality and usability of each solution.\n\nVolunteering with AISM has strengthened my interest in inclusive and accessible technology. I approach each project with curiosity, care, and a desire to learn, looking for opportunities to contribute to AI and machine learning solutions that address real needs.',
     
     
     // Skills Section
@@ -629,8 +627,6 @@ const translations = {
     'opportunities.letsConnect': 'Let\'s Connect',
     
     // CV Dropdown
-    'cv.english': 'Download CV (English)',
-    'cv.italian': 'Download CV (Italian)',
     
     // Language
     'language.italian': 'Italian',

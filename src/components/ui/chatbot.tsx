@@ -398,8 +398,8 @@ What would you like to know?`,
         break;
       case 'CV Download':
         const link = document.createElement('a');
-        link.href = '/DOROTEA MONACO CV ENG.pdf';
-        link.download = 'DOROTEA MONACO CV ENG.pdf';
+        link.href = '/Dorotea-Monaco-CV.pdf';
+        link.download = 'Dorotea-Monaco-CV.pdf';
         link.click();
         break;
       case 'LinkedIn':

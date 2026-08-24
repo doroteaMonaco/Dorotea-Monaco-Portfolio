@@ -80,7 +80,6 @@ const softSkills = [
 export const Skills = () => {
   const { t } = useLanguageContext();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [showProficiency, setShowProficiency] = useState(true);
   
   // Mappa delle traduzioni per le categorie
   const getCategoryTranslation = (category: string) => {
@@ -94,20 +93,6 @@ export const Skills = () => {
     return translations[category] || category;
   };
 
-  const getProficiencyLabel = (proficiency: number) => {
-    if (proficiency >= 90) return "Expert";
-    if (proficiency >= 80) return "Advanced";
-    if (proficiency >= 70) return "Intermediate";
-    return "Learning";
-  };
-
-  const getProficiencyColor = (proficiency: number) => {
-    if (proficiency >= 90) return "text-green-600 dark:text-green-400";
-    if (proficiency >= 80) return "text-blue-600 dark:text-blue-400";
-    if (proficiency >= 70) return "text-yellow-600 dark:text-yellow-400";
-    return "text-orange-600 dark:text-orange-400";
-  };
-  
   return (
     <section id="skills" className="py-20 md:py-32 relative">
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-secondary/10 rounded-full blur-3xl"></div>
@@ -120,18 +105,6 @@ export const Skills = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('skills.subtitle')}
           </p>
-          
-          {/* Toggle for proficiency view */}
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <button
-              onClick={() => setShowProficiency(!showProficiency)}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
-            >
-              <span className="text-sm font-medium">
-                {showProficiency ? "Hide" : "Show"} Proficiency Levels
-              </span>
-            </button>
-          </div>
         </div>
         
         {/* Technical Skills */}
@@ -166,21 +139,14 @@ export const Skills = () => {
                       className="group/skill"
                       style={{ animationDelay: `${(index * 150) + (skillIndex * 50)}ms` }}
                     >
-                      <div className="flex items-center justify-between mb-1">
+                      <div className="mb-1">
                         <span className="text-sm font-medium text-foreground">
                           {skill.name}
                         </span>
-                        {showProficiency && (
-                          <span className={`text-xs font-medium ${getProficiencyColor(skill.proficiency)}`}>
-                            {getProficiencyLabel(skill.proficiency)}
-                          </span>
-                        )}
                       </div>
-                      {showProficiency && (
-                        <div className="mb-1">
-                          <Progress value={skill.proficiency} className="h-2" />
-                        </div>
-                      )}
+                      <div className="mb-1">
+                        <Progress value={skill.proficiency} className="h-2" />
+                      </div>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
                         <span>{skill.projects} projects</span>
                       </div>
