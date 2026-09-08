@@ -31,10 +31,12 @@ export const Projects = () => {
       isFeatured: true,
       contributors: [
         {
-          name: "Federico Carollo"
+          name: "Federico Carollo",
+          github: "https://github.com/FedeCarollo"
         },
         {
-          name: "Davide Carletto"
+          name: "Davide Carletto",
+          github: "https://github.com/DavideCarletto"
         },
         {
           name: "Luigi Gonnella",
