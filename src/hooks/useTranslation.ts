@@ -173,6 +173,11 @@ const translations = {
     // Experience Timeline
     'experience.title': 'Esperienza & Timeline',
     'experience.subtitle': 'Il mio percorso attraverso formazione, volontariato e risultati',
+    'experience.preview.eyebrow': 'Esperienza in primo piano',
+    'experience.preview.title': 'Il mio percorso recente',
+    'experience.preview.featured': 'In primo piano',
+    'experience.preview.viewTimeline': 'Vedi la timeline completa',
+    'experience.preview.opensignalSummary': 'Sviluppo di un’applicazione desktop in Python per l’analisi e la selezione dei moti sismici, con interfaccia PySide6/QML.',
     'experience.ongoing': 'In corso',
     'experience.berkeley.period': 'Settembre 2026 – Febbraio 2027',
     'experience.berkeley.title': 'Visiting Student Researcher',
@@ -502,6 +507,11 @@ const translations = {
     // Experience Timeline
     'experience.title': 'Experience & Timeline',
     'experience.subtitle': 'My journey through education, volunteering, and achievements',
+    'experience.preview.eyebrow': 'Featured experience',
+    'experience.preview.title': 'My recent journey',
+    'experience.preview.featured': 'Featured',
+    'experience.preview.viewTimeline': 'View the full timeline',
+    'experience.preview.opensignalSummary': 'Development of a Python desktop application for seismic ground-motion analysis and selection, with a PySide6/QML interface.',
     'experience.ongoing': 'Ongoing',
     'experience.berkeley.period': 'September 2026 – February 2027',
     'experience.berkeley.title': 'Visiting Student Researcher',

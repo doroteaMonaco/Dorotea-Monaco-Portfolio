@@ -10,6 +10,7 @@ import Skills from "@/components/sections/Skills";
 import Volunteer from "@/components/sections/Volunteer";
 import Contact from "@/components/sections/Contact";
 import ExploreCards from "@/components/sections/ExploreCards";
+import ExperiencePreview from "@/components/sections/ExperiencePreview";
 import { Chatbot } from "@/components/ui/chatbot";
 
 const Index = () => {
@@ -41,6 +42,7 @@ const Index = () => {
         <main id="main-content">
           <Hero />
           <ExploreCards />
+          <ExperiencePreview />
           <FeaturedProjects />
           <Publications />
           <Skills />
