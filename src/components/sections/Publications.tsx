@@ -7,6 +7,15 @@ export const Publications = () => {
 
   const publications = [
     {
+      title: t('publications.histomorph.title'),
+      authors: t('publications.histomorph.authors'),
+      venue: t('publications.histomorph.venue'),
+      year: "2026",
+      abstract: t('publications.histomorph.abstract'),
+      pdfLink: "/Histomorph-Virtual-Staining.pdf",
+      tags: ["Virtual Staining", "Computational Pathology", "Generative AI", "Medical Imaging"],
+    },
+    {
       title: t('publications.gan.title'),
       authors: t('publications.gan.authors'),
       venue: t('publications.gan.venue'),

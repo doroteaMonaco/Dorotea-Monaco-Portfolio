@@ -8,6 +8,7 @@ import llm from "@/assets/projects/llm.png";
 import ml from "@/assets/projects/ml.png";
 import participium from "@/assets/projects/participium.png";
 import opensignal from "@/assets/projects/opensignal.png";
+import histomorph from "@/assets/projects/histomorph.png";
 // Placeholder image for Ruggine - replace with actual screenshot when available
 // Placeholder image for Machine Learning Projects - replace with actual screenshot when available
 // Placeholder image for LLM Architectures - replace with actual screenshot when available
@@ -20,6 +21,27 @@ export const Projects = () => {
   const { t } = useLanguageContext();
 
   const projects = [
+    {
+      title: t('projects.histomorph.title'),
+      description: t('projects.histomorph.description'),
+      metrics: "🔬 Comparative generative AI • 🧬 Clinical evaluation • 🩺 Computational pathology",
+      image: histomorph,
+      tech: ["Python", "PyTorch", "GANs", "Latent Diffusion", "Transformers", "Foundation Models", "Whole-Slide Imaging"],
+      link: "/Histomorph-Virtual-Staining.pdf",
+      isFeatured: true,
+      contributors: [
+        {
+          name: "Federico Carollo"
+        },
+        {
+          name: "Davide Carletto"
+        },
+        {
+          name: "Luigi Gonnella",
+          github: "https://github.com/LuigiGonnella"
+        }
+      ]
+    },
     {
       title: t('projects.opensignal.title'),
       description: t('projects.opensignal.description'),
@@ -228,23 +250,32 @@ export const Projects = () => {
                       <p className="text-xs text-muted-foreground mb-2 font-medium">Contributors:</p>
                       <div className="flex flex-wrap gap-2">
                         {p.contributors.map((contributor, idx) => (
-                          <a
-                            key={idx}
-                            href={contributor.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-muted/50 hover:bg-brand/10 hover:text-brand transition-colors duration-300 text-xs"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <img
-                              src={`${contributor.github}.png`}
-                              alt={`${contributor.name} GitHub avatar`}
-                              className="w-5 h-5 rounded-full border border-muted mr-1"
-                              style={{ display: 'inline-block', verticalAlign: 'middle' }}
-                            />
-                            <Github className="w-3 h-3" />
-                            <span>{contributor.name}</span>
-                          </a>
+                          contributor.github ? (
+                            <a
+                              key={idx}
+                              href={contributor.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-muted/50 hover:bg-brand/10 hover:text-brand transition-colors duration-300 text-xs"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <img
+                                src={`${contributor.github}.png`}
+                                alt={`${contributor.name} GitHub avatar`}
+                                className="w-5 h-5 rounded-full border border-muted mr-1"
+                                style={{ display: 'inline-block', verticalAlign: 'middle' }}
+                              />
+                              <Github className="w-3 h-3" />
+                              <span>{contributor.name}</span>
+                            </a>
+                          ) : (
+                            <span
+                              key={idx}
+                              className="inline-flex items-center px-2 py-1 rounded-md bg-muted/50 text-xs"
+                            >
+                              {contributor.name}
+                            </span>
+                          )
                         ))}
                       </div>
                     </div>

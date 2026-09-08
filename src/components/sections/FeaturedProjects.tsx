@@ -7,11 +7,20 @@ import participium from "@/assets/projects/participium.png";
 import llm from "@/assets/projects/llm.png";
 import ml from "@/assets/projects/ml.png";
 import opensignal from "@/assets/projects/opensignal.png";
+import histomorph from "@/assets/projects/histomorph.png";
 
 export const FeaturedProjects = () => {
   const { t } = useLanguageContext();
 
   const featuredProjects = [
+    {
+      title: t('projects.histomorph.title'),
+      description: t('projects.histomorph.description'),
+      metrics: "🔬 Generative AI • 🩺 Computational pathology",
+      image: histomorph,
+      tech: ["Python", "PyTorch", "GANs", "Diffusion Models", "Transformers"],
+      link: "/Histomorph-Virtual-Staining.pdf",
+    },
     {
       title: t('projects.opensignal.title'),
       description: t('projects.opensignal.description'),

@@ -71,8 +71,8 @@ I'm always eager to learn new technologies and stay updated with industry trends
 🌍 **OpenSignal** (2026)
 Desktop application developed at DISEG, Politecnico di Torino, in collaboration with Luigi Gonnella and Jean Piers Chavez. It provides an integrated workflow for seismic ground-motion analysis and selection, including target spectra, record databases, spectral scaling, signal processing, spectrum matching, accelerogram generation, and site-response analysis.
 
-🔬 **Virtual Staining of Histopathology Images** (2026)
-Developed and evaluated deep-learning approaches for virtual H&E-to-IHC staining, comparing GAN-based, deterministic, and latent diffusion architectures with pathology foundation models and dedicated perceptual, structural, and morphological evaluation pipelines.
+🔬 **Histomorph: Virtual Staining for Histopathology** (2026)
+Developed with Federico Carollo, Davide Carletto, and Luigi Gonnella. The project compares GAN-based, transformer-based, and latent diffusion architectures for virtual H&E-to-CYP11B2 IHC staining, using both patch-level metrics and structural evaluation of diagnostically relevant regions.
 
 🧠 **GAN for Data Augmentation and Domain Adaptation** (2025)
 Research-grade medical imaging project using DCGANs and cDCGANs for data augmentation and domain adaptation in imbalanced medical image classification. Implemented with PyTorch, including comprehensive evaluation across ResNet-50, ResNet-18, and AlexNet architectures. Achieved clinical-quality results for melanoma detection in ISIC dataset (developed with Luigi Gonnella).
@@ -102,7 +102,7 @@ Classic Pacman arcade game for Landtiger LPC1768 board programmed in ARM assembl
 Recipe sharing forum under active development. Built with React Router, Prisma, PostgreSQL, Redis, Supabase, and Vercel. Community features and enhanced UI coming soon.
 
 Together, these projects reflect my experience in AI/ML, software engineering, research workflows, and low-level programming.`,
-    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'opensignal', 'seismic', 'earthquake', 'diseg', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
+    keywords: ['projects', 'work', 'portfolio', 'built', 'developed', 'histomorph', 'virtual staining', 'histopathology', 'opensignal', 'seismic', 'earthquake', 'diseg', 'gan', 'participium', 'llm', 'machine learning', 'ml', 'geocontrol', 'ruggine', 'misfortune', 'pacman', 'recapp', 'ai', 'deep learning', 'pytorch', 'rust', 'chat'],
     quickReplies: ['View Projects', 'Skills', 'Research Papers', 'Contact']
   },
   {
@@ -225,6 +225,14 @@ I stay updated with the latest trends in web development, AI technologies, and a
     question: 'What research papers have you worked on?',
     answer: `I've worked on academic research projects in AI/ML and software engineering:
 
+📄 **Histomorph: Virtual Staining for Histopathology** (2026)
+Authors: Federico Carollo, Davide Carletto, Dorotea Monaco, Luigi Gonnella
+Venue: Politecnico di Torino - Machine Learning in Applications Project
+
+Comparative study of GAN-based, transformer-based, and latent diffusion methods for translating H&E histopathology images into virtual CYP11B2 IHC. The evaluation combines image-level metrics with region- and morphology-level analysis to assess downstream diagnostic utility under limited data and imperfect spatial alignment.
+
+Tags: Virtual Staining, Computational Pathology, Generative AI, Medical Imaging
+
 📄 **GANs for Data Augmentation in Imbalanced Medical Image Classification** (2025)
 Authors: Dorotea Monaco, Luigi Gonnella
 Venue: Politecnico di Torino - Machine Learning for Visual and Multimedia Project
@@ -246,7 +254,7 @@ The project implements workflow orchestration, code execution sandbox, quality m
 
 Tags: Large Language Models, Software Engineering, Multi-Agent Systems, Code Generation, LangGraph, AI
 
-Both projects demonstrate my research capabilities in AI/ML and software engineering, combining theoretical knowledge with practical implementation and rigorous evaluation.`,
+These projects demonstrate my research experience in AI/ML and software engineering, combining theoretical knowledge with practical implementation and rigorous evaluation.`,
     keywords: ['research', 'paper', 'papers', 'academic', 'gan', 'llm', 'medical imaging', 'code generation', 'writing'],
     quickReplies: ['View Research Papers', 'Projects', 'AI Experience', 'Contact']
   },
