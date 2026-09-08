@@ -22,7 +22,16 @@ export const ExperienceTimeline = () => {
       organization: t('experience.berkeley.organization'),
       description: t('experience.berkeley.description'),
       type: "work",
-      tags: [t('experience.tags.aiml'), t('experience.tags.research'), t('experience.tags.structuralEngineering')]
+      tags: [
+        t('experience.tags.aiml'),
+        t('experience.tags.research'),
+        t('experience.tags.structuralEngineering'),
+        t('experience.tags.physicsInformedMl'),
+        t('experience.tags.flowMatching'),
+        t('experience.tags.diffusionModels'),
+        t('experience.tags.groundMotionInversion'),
+        t('experience.tags.sando')
+      ]
     },
     {
       year: t('experience.opensignal.period'),

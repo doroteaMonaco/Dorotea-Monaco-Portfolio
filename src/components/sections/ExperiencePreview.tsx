@@ -67,6 +67,11 @@ export const ExperiencePreview = () => {
                 <Badge variant="secondary">{t('experience.tags.aiml')}</Badge>
                 <Badge variant="secondary">{t('experience.tags.research')}</Badge>
                 <Badge variant="secondary">{t('experience.tags.structuralEngineering')}</Badge>
+                <Badge variant="secondary">{t('experience.tags.physicsInformedMl')}</Badge>
+                <Badge variant="secondary">{t('experience.tags.flowMatching')}</Badge>
+                <Badge variant="secondary">{t('experience.tags.diffusionModels')}</Badge>
+                <Badge variant="secondary">{t('experience.tags.groundMotionInversion')}</Badge>
+                <Badge variant="secondary">{t('experience.tags.sando')}</Badge>
               </div>
             </article>
 

@@ -152,7 +152,7 @@ This human-centered approach drives every project I work on, ensuring that solut
 From March to July 2026, I contributed to OpenSignal at DISEG – Politecnico di Torino. I worked on the migration of a seismic ground-motion analysis application from MATLAB to a modular Python architecture, developing scientific modules and its PySide6/QML interface.
 
 🔬 **Research Experience**:
-From September 2026, I will be a Visiting Student Researcher at UC Berkeley's Department of Civil and Environmental Engineering, working on my Master's thesis at the intersection of software engineering, machine learning, and structural engineering.
+I am a Visiting Student Researcher at UC Berkeley's Department of Civil and Environmental Engineering, working on my Master's thesis on reconstructing earthquake ground motions from structural responses. I am exploring two physics-guided generative approaches: sensor-aware multi-fidelity Conditional Flow Matching with SANDO-based candidate correction, and physics-informed Conditional Diffusion that internalizes structural consistency during training for faster inference.
 
 🎓 **Academic Experience**:
 - Advanced software engineering principles
@@ -262,7 +262,7 @@ These projects demonstrate my research experience in AI/ML and software engineer
     id: 'education',
     question: 'Tell me about your education',
     answer: `🎓 **Current Education**: 
-Master's in Computer Engineering at Politecnico di Torino (ongoing)
+Master's in Computer Engineering at Politecnico di Torino (ongoing) — GPA: 28.96/30
 
 📚 **Key Areas of Study**:
 • Advanced Software Engineering & Architecture
